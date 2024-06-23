@@ -1,8 +1,8 @@
-// function myFunction() {
-//   var carname = "volvo";
-//   console.log(carname);
-// }
-// myFunction();
+function myFunction() {
+  var carname = "volvo";
+  console.log(carname);
+}
+myFunction();
 
 var num1 = prompt(" enter first number :");
 var num2 = prompt(" enter secend number :");
