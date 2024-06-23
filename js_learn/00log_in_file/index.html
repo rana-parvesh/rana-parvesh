@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Modern Login Form | CodingStella</title>
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Poppins&amp;display=swap"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <!-- partial:index.partial.html -->
+    <div class="wrapper">
+      <div class="login_box">
+        <div class="login-header">
+          <span>Login</span>
+        </div>
+
+        <div class="input_box">
+          <input type="text" id="user" class="input-field" required />
+          <label for="user" class="label"></label>
+          <i class="bx bx-user icon"></i>
+        </div>
+
+        <div class="input_box">
+          <input type="password" id="pass" class="input-field" required />
+          <label for="pass" class="label"></label>
+          <i class="bx bx-lock-alt icon"></i>
+        </div>
+
+        <div class="remember-forgot">
+          <div class="remember-me">
+            <input type="checkbox" id="remember" />
+            <label for="remember">Remember me</label>
+          </div>
+
+          <div class="forgot">
+            <a href="#">Forgot password?</a>
+          </div>
+        </div>
+
+        <div class="input_box">
+          <input
+            onclick="login()"
+            type="submit"
+            class="input-submit"
+            value="Login"
+          />
+        </div>
+
+        <div class="register">
+          <span>Don't have an account? <a href="#">Register</a></span>
+        </div>
+      </div>
+    </div>
+    <!-- partial -->
+
+    <!-- this is for me -->
+    <script>
+      function login() {
+        let username = document.querySelector("#user").value;
+        let password = document.querySelector("#pass").value;
+        if (username == "shoron" && password == 2020) {
+          location.assign(
+            "http://127.0.0.1:5500/js_learn/00log_in_file/text.html"
+          );
+        } else {
+          alert("failed please try again");
+        }
+      }
+    </script>
+  </body>
+</html>
