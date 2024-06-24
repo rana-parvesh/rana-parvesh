@@ -59,12 +59,15 @@ var height = parseFloat(prompt("enter height : "));
 //this is rectringle range
 
 var area = (base * height) / 2; //this is another one  // js_learn/10.function/index.js
-document.write("area = " + area);*/
+document.write("area = " + area);
 
-var n = 4;
+var n = 11;
 
 if (n % 2 == 0) {
-  document.write("shoron");
+  document.write("even");
 } else {
-  document.write("rana");
+  document.write("odd");
 }
+*/
+
+// leatter grade

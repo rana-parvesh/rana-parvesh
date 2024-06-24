@@ -5,7 +5,7 @@ function sleep(name, time) {
 sleep("rahim ", "9am");
 sleep("karim ", "10am");
 sleep("shoron ", "11am");
-
+/*
 //task
 
 var firstNumber = 20;
@@ -28,3 +28,4 @@ console.log("20  /  10 =", div);
 
 rem = firstNumber % secondNumber;
 console.log("20  %  10 =", rem);
+*/
