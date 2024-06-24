@@ -1,9 +1,9 @@
-function myFunction() {
+/*function myFunction() {
   var carname = "volvo";
   console.log(carname);
 }
 myFunction();
-/*
+
 var num1 = prompt(" enter first number :");
 var num2 = prompt(" enter secend number :");
 
@@ -17,7 +17,7 @@ document.write("addition =  " + sum);
 
 sub = num1 - num2;
 document.write("substraction =  " + sub);
-*/
+
 //
 
 function sleep(name, time) {
@@ -50,3 +50,21 @@ console.log("20  /  10 =", div);
 
 rem = firstNumber % secondNumber;
 console.log("20  %  10 =", rem);
+
+//calculation some math
+
+var base = parseFloat(prompt("enter base : "));
+var height = parseFloat(prompt("enter height : "));
+
+//this is rectringle range
+
+var area = (base * height) / 2; //this is another one  // js_learn/10.function/index.js
+document.write("area = " + area);*/
+
+var n = 4;
+
+if (n % 2 == 0) {
+  document.write("shoron");
+} else {
+  document.write("rana");
+}
