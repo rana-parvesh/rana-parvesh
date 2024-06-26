@@ -29,3 +29,23 @@ console.log("20  /  10 =", div);
 rem = firstNumber % secondNumber;
 console.log("20  %  10 =", rem);
 */
+
+var rana = "rana";
+var shoron = " shoron";
+var bro = rana + shoron;
+
+console.log(bro + "  they are brother");
+//
+/*
+var result = 45;
+console.log(result);
+
+if (80 <= result) console.log("the result is A+");
+else if (70 <= result) console.log("the result is A");
+else if (60 <= result) console.log("the result is A-");
+else if (50 <= result) console.log("the result is B");
+else if (40 <= result) console.log("the result is C");
+else if (33 <= result) console.log("the result is D");
+else if (0 <= result) console.log("the result is F");
+*/
+//

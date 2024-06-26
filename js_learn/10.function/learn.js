@@ -68,6 +68,142 @@ if (n % 2 == 0) {
 } else {
   document.write("odd");
 }
-*/
 
-// leatter grade
+
+//
+
+var n1 = prompt("enter your number n1 :  ");
+var n2 = prompt("enter your number n2 :  ");
+var n3 = prompt("enter your number n3 :  ");
+
+if (n1 > n2 && n1 > n3) {
+  document.write("n1 is large number", n1);
+}
+
+if (n2 > n1 && n2 > n3) {
+  document.write("n2 is large number", n2);
+}
+
+if (n3 > n1 && n3 > n2) {
+  document.write("n3 is large number", n3);
+}
+
+// vowel or consonent
+
+var letter = prompt("enter your letter :  ");
+
+if (
+  letter == "a" ||
+  letter == "e" ||
+  letter == "i" ||
+  letter == "o" ||
+  letter == "u"
+) {
+  document.write("vowel");
+} else {
+  docu(" consonent");
+}
+
+//condition switch
+// **  important thinks **
+switch, case, break , deafult
+
+var digite = prompt(" Enter your digite : ");
+
+switch (digite) {
+  case "0":
+    document.write("zero");
+    break;
+  case "1":
+    document.write("one");
+    break;
+  case "2":
+    document.write("two");
+    break;
+  case "3":
+    document.write("three");
+    break;
+  case "4":
+    document.write("four");
+    break;
+  case "5":
+    document.write("five");
+    break;
+  case "6":
+    document.write("six");
+    break;
+  case "7":
+    document.write("seven");
+    break;
+  case "8":
+    document.write("eight");
+    break;
+  case "9":
+    document.write("nine");
+    break;
+  default:
+    document.write("invalide  number");
+}
+
+//Task -- 5
+var letter = prompt(" Enter your letter :  ");
+letter = letter.toLocaleLowerCase();
+
+switch (letter) {
+  case "a":
+    document.write("vowel");
+    break;
+  case "e":
+    document.write("vowel");
+    break;
+  case "i":
+    document.write("vowel");
+    break;
+  case "o":
+    document.write("vowel");
+    break;
+  case "u":
+    document.write("vowel");
+    break;
+
+  default:
+    document.write("consonant");
+}
+
+
+//another shortcut waye
+
+//Task -- 5
+var letter = prompt(" Enter your letter :  ");
+letter = letter.toLocaleLowerCase();
+
+switch (letter) {
+  case "a":
+  case "e":
+  case "i":
+  case "o":
+  case "u":
+    document.write("vowel");
+    break;
+  default:
+    document.write("consonant");
+}
+//first step
+var sum = 0;
+for (var i = 0; i <= 100; i++) {
+  sum += i;
+}
+document.write(sum);
+}
+
+//second step
+
+//user input
+var m = parseInt(prompt("Enter your starting number"));
+var n = parseInt(prompt("Enter your last number"));
+
+var sum = 0;
+for (var i = m; i <= n; i++) {
+  sum += i;
+}
+document.write(sum);*/
