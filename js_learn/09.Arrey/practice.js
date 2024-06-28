@@ -1,11 +1,11 @@
-function sleep(name, time) {
+/*-function sleep(name, time) {
   console.log(name + "is sleeping at" + time);
 }
 
 sleep("rahim ", "9am");
 sleep("karim ", "10am");
 sleep("shoron ", "11am");
-/*
+
 //task
 
 var firstNumber = 20;
@@ -28,13 +28,13 @@ console.log("20  /  10 =", div);
 
 rem = firstNumber % secondNumber;
 console.log("20  %  10 =", rem);
-*/
+
 
 var rana = "rana";
 var shoron = " shoron";
 var bro = rana + shoron;
 
-console.log(bro + "  they are brother");
+console.log(bro + "  they are brother");*/
 //
 /*
 var result = 45;

@@ -207,3 +207,15 @@ for (var i = m; i <= n; i++) {
   sum += i;
 }
 document.write(sum);*/
+
+//
+
+//user input
+var m = parseInt(prompt("Enter your time duration :  "));
+var n = 0.026; //parseInt(prompt("Enter your rate number :  ", 0.26));
+var totalTaka = m * n;
+
+for (var i = 0; i <= 0; i++) {
+  document.write("This is the value (total taka)  =  ");
+}
+document.write(totalTaka);
