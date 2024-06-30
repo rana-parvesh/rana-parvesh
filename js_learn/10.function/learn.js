@@ -414,7 +414,7 @@ var d2 = function displayMessage(msg) {
 };
 
 d2(" this is the function expression massage ");
-*/
+
 
 // this is the arrey
 
@@ -439,3 +439,28 @@ var n1 = [" hellow bangladesh  ", " how are you"];
 var n2 = [" hellow pakistan  ", " how are you"];
 var n = n1.concat(n2);
 document.write(n);
+
+// use arry for loop
+
+var num = [25, 36, 47, 89, 65];
+var sum = 0;
+
+for (var i = 0; i <= 4; i++) {
+  document.write(num[i], "<br>");
+  sum = sum + num[i];
+}
+document.write("the value of sum = ", sum, "<br>");
+*/
+
+// user input
+var num = new Array();
+for (var i = 0; i < 5; i++) {
+  num[i] = parseInt(prompt("enter your numbers : "));
+}
+var sum = 0;
+
+for (var i = 0; i <= 4; i++) {
+  document.write(num[i], "<br>");
+  sum = sum + num[i];
+}
+document.write("the value of sum = ", sum, "<br>");
