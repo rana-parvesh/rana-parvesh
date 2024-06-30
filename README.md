@@ -1,6 +1,5 @@
 
-![web developer](https://scontent.fdac5-2.fna.fbcdn.net/v/t39.30808-6/367717592_3522861114696388_674032824446359490_n.jpg?stp=dst-jpg_s960x960&_nc_cat=108&ccb=1-7&_nc_sid=5f2048&_nc_eui2=AeGslzSHV0rDLdGBjsUgTCioYUlGaYBt7NthSUZpgG3s25u63INPVGGwyWB4vpsixFj6YYTbZbC6iFEIR0ROh1Jm&_nc_ohc=4OX9CHS9XHUQ7kNvgGAHbXZ&_nc_ht=scontent.fdac5-2.fna&oh=00_AYCwJmR94WGg5_5VWLiqvmt81r1c8TcCHTWUJPZ9TetOfQ&oe=6654BA3F)
-
+![web developer](https://scontent.fdac5-1.fna.fbcdn.net/v/t39.30808-6/294026129_3227019167613919_581297802025013106_n.jpg?_nc_cat=100&ccb=1-7&_nc_sid=86c6b0&_nc_eui2=AeEfhR-iNpByjhtDQmXoOr3h5PsVmWGYGfvk-xWZYZgZ-4u3phZmsJDogkZZlLcGdl-Xd--ssIIo04Eod2egxgav&_nc_ohc=G-NI5e0QDhgQ7kNvgGqavBs&_nc_ht=scontent.fdac5-1.fna&oh=00_AYBNifpFtMa3-2-2Dvj-ZUPa3ZFLYAGtxND-B6BE9BNU5A&oe=6686D74D)
 ### Hi there 👋, I'm rana parvesh
 #### web developer
 I made this project just for fun, it allows you to create nice and simple GitHub Readme files that you can copy/paste and use in your profile.
