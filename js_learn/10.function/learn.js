@@ -450,7 +450,7 @@ for (var i = 0; i <= 4; i++) {
   sum = sum + num[i];
 }
 document.write("the value of sum = ", sum, "<br>");
-*/
+
 
 // user input
 var num = new Array();
@@ -463,4 +463,4 @@ for (var i = 0; i <= 4; i++) {
   document.write(num[i], "<br>");
   sum = sum + num[i];
 }
-document.write("the value of sum = ", sum, "<br>");
+document.write("the value of sum = ", sum, "<br>");*/

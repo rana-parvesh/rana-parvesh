@@ -48,4 +48,4 @@ else if (40 <= result) console.log("the result is C");
 else if (33 <= result) console.log("the result is D");
 else if (0 <= result) console.log("the result is F");
 */
-//
+//practice to the aray method
