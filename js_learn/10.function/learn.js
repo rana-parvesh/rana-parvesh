@@ -464,3 +464,44 @@ for (var i = 0; i <= 4; i++) {
   sum = sum + num[i];
 }
 document.write("the value of sum = ", sum, "<br>");*/
+
+/*//some arrey method
+
+//push , pop, concut, shift , unshift ,splice,slice,short method
+
+var names = ["rana", "shoron", "raihan", "taniya"];
+
+console.log(names);
+names.push("hena");
+ console.log(names);
+
+ names.pop();
+ console.log(names);
+
+ names.shift();
+ console.log(names);
+
+ names.unshift("parvesh");
+ console.log(names);
+
+ names.splice(3, 0, "rabbbi", "sumaiya");
+ console.log(names);
+
+slice
+
+ var newArrey = names.slice(1);
+console.log(newArrey);
+
+//short method (alphabet)
+names.sort();
+console.log(names);
+names.reverse();
+console.log(names);
+
+//sorting the number
+
+var numbers = [25, 2, 0, 91, 98, 35, 42, 12];
+numbers.sort(function (a, b) {
+  return a - b; //for the sort reversm (b- a)
+});
+console.log(numbers);*/

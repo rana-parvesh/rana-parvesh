@@ -49,3 +49,72 @@ else if (33 <= result) console.log("the result is D");
 else if (0 <= result) console.log("the result is F");
 */
 //practice to the aray method
+
+var a = 25;
+var b = 25;
+var c = a + b;
+console.log("the value of sum c = ", c);
+
+var a = 25;
+var b = 25;
+var c = a - b;
+console.log("the value of sub c = ", c);
+
+var a = 25;
+var b = 25;
+var c = a * b;
+console.log("the value of multripple c = ", c);
+
+var a = 25;
+var b = 25;
+var c = a / b;
+console.log("the value of c divident = ", c);
+
+// condition
+
+var rana = 200;
+var shorom = 200;
+// var compare =
+
+if (rana > shorom) {
+  console.log("rana is hero");
+} else if (rana < shorom) {
+  console.log("shorom is hero");
+} else {
+  console.log("rana and shorom are   hero");
+}
+
+//turnary operator
+
+var number = 0;
+
+var result = 0 < number ? "positive" : 0 > number ? "negetive" : "zero";
+console.log(result);
+
+var rana = [25, 26, 27, 28, 29];
+rana.pop();
+rana.pop();
+rana.pop();
+rana.pop();
+rana.pop();
+rana.push(25, 45, 75);
+rana.pop();
+console.log(rana);
+
+//
+var num = [65, 56, 89, 76, 82];
+var sum = 0;
+
+for (var i = 0; i < 5; i++) {
+  console.log(num[i]);
+  sum = sum + num[i];
+}
+console.log("the result is sum = " + sum);
+
+//lets do the function
+
+function sum(a, b) {
+  var result = a + b;
+  console.log(result);
+}
+sum(25, 26);
