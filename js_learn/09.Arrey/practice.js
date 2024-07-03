@@ -47,7 +47,7 @@ else if (50 <= result) console.log("the result is B");
 else if (40 <= result) console.log("the result is C");
 else if (33 <= result) console.log("the result is D");
 else if (0 <= result) console.log("the result is F");
-*/
+
 //practice to the aray method
 
 var a = 25;
@@ -118,3 +118,25 @@ function sum(a, b) {
   console.log(result);
 }
 sum(25, 26);
+*/
+//
+
+function topScorer(playersInfo) {
+  var top = playersInfo[0][0];
+  var tops = playersInfo[0][1];
+  for (var i = 1; i < playersInfo.length; i++) {
+    if (tops < playersInfo[i][1]) {
+      tops = playersInfo[x][1];
+      top = playersInfo[i][0];
+    }
+  }
+  return topScorer;
+}
+var playersInfo = [
+  ["rana", 99],
+  ["shoron", 78],
+  ["muna", 56],
+  ["hasi", 89],
+];
+var name = topScorer(playersInfo);
+console.log(name);

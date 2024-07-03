@@ -504,4 +504,38 @@ var numbers = [25, 2, 0, 91, 98, 35, 42, 12];
 numbers.sort(function (a, b) {
   return a - b; //for the sort reversm (b- a)
 });
-console.log(numbers);*/
+console.log(numbers);
+
+// arrey dimantion
+
+function highestScore(scores) {
+  var max = scores[0];
+  for (let i = 1; i < scores.length; i++) {
+    if (max < scores[i]) {
+      max = scores[i];
+    }
+  }
+  return max;
+}
+var Scores = [89, 45, 96, 56, 78, 95, 65, 36, 75, 85, 94, 75, 98];
+var maxscore = highestScore(scores);
+document.write(maxscore);*/
+
+// task --9
+
+//2D arrey
+//create a function called topScorer that will
+//recived a 2d arrey called player Info
+// based on hghest score , return the name of the player
+/*
+function topScorer(platersInfo) {
+  document.write(platersInfo);
+}
+var players = [
+  ["rana", 99],
+  ["shoron", 78],
+  ["muna", 56],
+  ["hasi", 89],
+];
+*/
+// ------------object-----------
