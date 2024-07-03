@@ -140,3 +140,31 @@ var playersInfo = [
 ];
 var name = topScorer(playersInfo);
 console.log(name);
+
+function SD(food, play, born, marks) {
+  this.food = food;
+  this.play = play;
+  this.born = born;
+  this.marks = marks;
+
+  this.print = function () {
+    console.log(this.food);
+    console.log(this.play);
+    console.log(this.born);
+    console.log(this.marks);
+  };
+}
+var SD1 = new SD(
+  ["beef", "vegetable", "chicken"],
+  "cricket",
+  1999,
+  [78, 56, 87, 36]
+);
+var SD2 = new SD(
+  ["sweets", "lichi", "suger"],
+  "chess",
+  2000,
+  [23, 45, 78, 96, 35]
+);
+SD1.print();
+SD2.print();
