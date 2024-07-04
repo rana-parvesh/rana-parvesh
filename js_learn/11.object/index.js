@@ -99,7 +99,7 @@ student4.print();
 student5.print();
 
 //geussing game
-
+/*
 var numberOfWon = 0;
 var numberOfLost = 0;
 
@@ -120,4 +120,4 @@ for (var i = 0; i < 5; i++) {
   }
 }
 document.write("totel number of won =", numberOfWon, "<br>    ");
-document.write("totel number of lost =", numberOfLost, "<br>");
+document.write("totel number of lost =", numberOfLost, "<br>");*/
