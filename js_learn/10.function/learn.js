@@ -519,7 +519,7 @@ function highestScore(scores) {
 }
 var Scores = [89, 45, 96, 56, 78, 95, 65, 36, 75, 85, 94, 75, 98];
 var maxscore = highestScore(scores);
-document.write(maxscore);*/
+document.write(maxscore);
 
 // task --9
 
@@ -527,7 +527,7 @@ document.write(maxscore);*/
 //create a function called topScorer that will
 //recived a 2d arrey called player Info
 // based on hghest score , return the name of the player
-/*
+
 function topScorer(platersInfo) {
   document.write(platersInfo);
 }
@@ -537,5 +537,5 @@ var players = [
   ["muna", 56],
   ["hasi", 89],
 ];
-*/
-// ------------object-----------
+
+// ------------object-----------*/

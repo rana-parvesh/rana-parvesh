@@ -118,7 +118,7 @@ function sum(a, b) {
   console.log(result);
 }
 sum(25, 26);
-*/
+
 //
 
 function topScorer(playersInfo) {
@@ -167,4 +167,4 @@ var SD2 = new SD(
   [23, 45, 78, 96, 35]
 );
 SD1.print();
-SD2.print();
+SD2.print();*/

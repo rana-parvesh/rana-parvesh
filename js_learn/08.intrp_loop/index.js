@@ -1,5 +1,5 @@
 // while loop
-/*
+
 var i = 0; //its normal loop
 while (i < 10) {
   i++;
@@ -22,11 +22,11 @@ while (true) {
     break;
   }
   i++;
-}*/
-/*
-hasin haydar student demant part
-compare i++ and ++i
-its reminder loop
+}
+
+// hasin haydar student demant part
+// compare i++ and ++i
+// its reminder loop
 var i = 0;
 while (i++ < 10) {
   console.log(i);
@@ -37,17 +37,16 @@ console.log("\n restart \n");
 
 while (++i < 10) {
   console.log(i);
-}*/
+}
 
 // do while loop
-/*
+
 var n = 0;
 do {
   console.log(n);
   n++;
 } while (n < 10); // <=for 1 to 10
 
-*/
 // for loop condition and  break
 
 /*concept
@@ -55,7 +54,7 @@ var i = 0
 for ( iniitailization, condition, steping){
 
 }
-
+*/
 var i;
 for (i = 0; i <= 10; i++) {
   // where i+=2 for the couple
@@ -67,9 +66,9 @@ for (i = 0; i <= 10; i++) {
 var i, j;
 for (i = 0, j = 10; i <= 10; i++, j--) {
   console.log(i, j);
-}*/
+}
 
-/* for loop factorial
+//  for loop factorial
 
 var a = 5;
 var factorial = 1;
@@ -87,7 +86,7 @@ var factorial = 1;
 for (var i = 1; i <= 10; i++) {
   factorial *= i;
   console.log(" factorial of", i, "is", factorial);
-}*/
+}
 
 // number series print
 /*
@@ -98,7 +97,7 @@ s3 =0 3 8 15 24 35 48
 s4 = 1 4 3 8 5 12 7 16
 s5 =0 1 1 2 3 5 8 13
 */
-/*
+
 // s1 = 2 4 6 8 10 12 14
 
 var s = "";
@@ -109,7 +108,7 @@ for (var i = 1; i < 10; i++) {
 }
 console.log("series 1=", s);
 
-// s2 = 1 4 7 10 13 16 
+// s2 = 1 4 7 10 13 16
 s = "1 ";
 n = 1;
 for (var i = 1; i < 10; i++) {
@@ -150,8 +149,8 @@ for (var i = 1; i < 10; i++) {
 
   s = s + n + "  ";
 }
-console.log("series 5=", s);*/
-/*
+console.log("series 5=", s);
+
 // multipilation table
 var series = ""; // Initialize series as an empty string
 for (var i = 1; i <= 10; i++) {
@@ -170,10 +169,10 @@ for (var i = 1; i <= 10; i++) {
     rana += i * j + " ";
   }
   console.log(rana);
-}*/
+}
 
 // the divisors
-/*
+
 var n = 144;
 var range = math.cail(math.sqrt(n));
 var divisors = "";
@@ -187,7 +186,7 @@ for (var i = 1; i <= range; i++) {
     }
   }
 }
-console.log(divisors);*/
+console.log(divisors);
 
 // the calander print of for loop
 var mounth = "december 2024";
