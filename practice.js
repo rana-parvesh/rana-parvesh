@@ -168,3 +168,22 @@ var SD2 = new SD(
 );
 SD1.print();
 SD2.print();*/
+
+function rana(name, age, marks) {
+  this.name = name;
+  this.age = age;
+  this.marks = marks;
+  this.print = function () {
+    console.log(this.name);
+    console.log(this.age);
+    console.log(this.marks);
+  };
+}
+var person1 = new rana("shoron", 23, [23, 25, 98, 45]);
+var person2 = new rana("jimu", 24, [23, 55, 98, 45]);
+var person3 = new rana("raihan", 25, [23, 25, 98, 45]);
+var person4 = new rana("hena", 26, [33, 75, 98, 45]);
+
+person1.print();
+person2.print();
+person3.print();
