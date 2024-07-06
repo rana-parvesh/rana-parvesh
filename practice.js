@@ -167,7 +167,7 @@ var SD2 = new SD(
   [23, 45, 78, 96, 35]
 );
 SD1.print();
-SD2.print();*/
+SD2.print();
 
 function rana(name, age, marks) {
   this.name = name;
@@ -186,4 +186,72 @@ var person4 = new rana("hena", 26, [33, 75, 98, 45]);
 
 person1.print();
 person2.print();
-person3.print();
+person3.print();*/
+
+// today 06/07/2024
+/*
+var num1 = 450;
+var num2 = 420;
+var sum = num1 + num2;
+console.log(sum);
+
+var num1 = 450;
+var num2 = 420;
+var sum = num1 - num2;
+console.log(sum);
+
+var num1 = 450;
+var num2 = 420;
+var sum = num1 * num2;
+console.log(sum);
+
+var num1 = 450;
+var num2 = 420;
+var sum = num1 / num2;
+console.log(sum);
+
+var num1 = 450;
+var num2 = 420;
+var sum = num1 % num2;
+console.log(sum);
+
+var a = 10;
+
+if (a > 20) {
+  console.log("rana is good boy");
+} else {
+  console.log("rana is a bad boy");
+}
+
+
+var number = parseInt(prompt("enter your number :  "));
+
+if (80 <= number) {
+  console.log("the result is A+");
+} else if (70 <= number) {
+  console.log("the result is A");
+} else if (60 <= number) {
+  console.log("the result is A-");
+} else if (50 <= number) {
+  console.log("the result is B");
+} else if (40 <= number) {
+  console.log("the result is C");
+} else if (33 <= number) {
+  console.log("the result is D");
+} else if (0 <= 32) {
+  console.log("Failed");
+}
+
+function createCounter(start) {
+  let current = start;
+  return function () {
+    return current++;
+  };
+}
+const a = 50;
+const coounter = createCounter(a);
+console.log(coounter()); // Output: 50
+console.log(coounter()); // Output: 51
+console.log(coounter()); // Output: 52
+*/
+

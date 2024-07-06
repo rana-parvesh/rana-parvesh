@@ -537,5 +537,20 @@ var players = [
   ["muna", 56],
   ["hasi", 89],
 ];
+*/
 
-// ------------object-----------*/
+// practice   function
+function serial(start) {
+  var now = start;
+  return function () {
+    return now++;
+  };
+}
+
+var n = 25;
+var counter = serial(n);
+
+counter();
+for (let i = 0; i < 10; i++) {
+  console.log(counter());
+}
