@@ -253,5 +253,66 @@ const coounter = createCounter(a);
 console.log(coounter()); // Output: 50
 console.log(coounter()); // Output: 51
 console.log(coounter()); // Output: 52
+
+
+function createSeries(start) {
+  var now = start;
+  return function () {
+    return now++;
+  };
+}
+
+const r = 35;
+const series = createSeries(r);
+
+for (var i = 0; i <= 5; i++) {
+  console.log(series());
+}
+
+// craete a object
+
+function person(name, age, marks) {
+  this.name = name;
+  this.age = age;
+  this.marks = marks;
+  this.print = function () {
+    console.log(this.name);
+    console.log(this.age);
+    console.log(this.marks);
+  };
+}
+var person1 = new person("rana parvesh", 24, [25, 26, 27]);
+var person2 = new person("shoron", 25, [252, 3226, 227]);
+var person3 = new person("raihan", 23, [215, 126, 127]);
+
+person1.print();
+person2.print();
+person3.print();
+
 */
 
+// the calander print of for loop
+var mounth = "december 2024";
+var days = 30;
+var start = 5;
+
+console.log("\n\n calander of ", mounth, "\n");
+console.log("sun  mon  tue  wed  thu  fri  sat");
+
+for (var i = 0; i <= 5; i++) {
+  var dayrow = "";
+  for (var j = 0; j < 7; j++) {
+    var currentday = 7 * i + j - start;
+    if (currentday > days) {
+      break;
+    } else if (currentday < 1) {
+      currentday = " ";
+    }
+    if (currentday > 9) {
+      dayrow += currentday + "   ";
+    } else {
+      dayrow += currentday + "    ";
+    }
+  }
+  console.log(dayrow);
+}
