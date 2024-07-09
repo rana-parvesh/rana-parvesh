@@ -1,14 +1,14 @@
 //get elements by id
 
-var head = document.getElementById("head1");
-head.innerHTML = "the value was changed";
+var head = document.getElementById("shoron");
+head.innerHTML = "my name is Rana";
 
-var head2 = document.getElementsByClassName("head2")[0];
-head2.innerHTML = "the value new";
+var head2 = document.getElementsByClassName("hasi")[0];
+head2.innerHTML = "i'm 30 years old";
 
-var head3 = document.getElementsByTagName("h2")[0];
-head3.innerHTML = "changed the value";
-
+var head3 = document.getElementsByTagName("h1")[2];
+head3.innerHTML = "i'm a student of the bba";
+/*
 //get element by id
 //get elements by class name
 //get elements by tag name
@@ -38,4 +38,4 @@ function myMessage2() {
 var myVar = document.querySelector("pic");
 function myPic1() {
   myVar.src = "image/rana.png";
-}
+}*/

@@ -289,30 +289,30 @@ person1.print();
 person2.print();
 person3.print();
 
-*/
 
-// the calander print of for loop
-var mounth = "december 2024";
-var days = 30;
-var start = 5;
 
-console.log("\n\n calander of ", mounth, "\n");
-console.log("sun  mon  tue  wed  thu  fri  sat");
+var person1 = "rana &";
+var person2 = " shoron";
+var relation = person1 + person2;
+console.log(relation, "are brother");
 
-for (var i = 0; i <= 5; i++) {
-  var dayrow = "";
-  for (var j = 0; j < 7; j++) {
-    var currentday = 7 * i + j - start;
-    if (currentday > days) {
-      break;
-    } else if (currentday < 1) {
-      currentday = " ";
-    }
-    if (currentday > 9) {
-      dayrow += currentday + "   ";
-    } else {
-      dayrow += currentday + "    ";
-    }
-  }
-  console.log(dayrow);
+//now for the function and loop
+
+function myFunction(start) {
+  var result = start;
+  return function () {
+    return result++;
+  };
 }
+var r = 52;
+var funny = myFunction(r);
+for (var i = 1; i <= 1; i++) {
+  console.log(funny());
+  if (funny == 52) {
+    console.log("result is loyal");
+  } else {
+    console.log("result is hungry");
+  }
+}*/
+
+document.getElementById("shoron").innerHTML = "My name is Rana";
