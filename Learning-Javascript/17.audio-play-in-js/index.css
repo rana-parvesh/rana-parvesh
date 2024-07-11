@@ -1,0 +1,13 @@
+body {
+  background-color: cadetblue;
+}
+button {
+  display: block;
+  margin: 10px;
+  border-radius: 15%;
+  border: 5px solid rgb(120, 135, 126);
+  color: rgba(235, 20, 20, 0.646);
+}
+button:hover {
+  background-color: rgba(15, 194, 87, 0.273);
+}

@@ -1,0 +1,14 @@
+body {
+  background-color: cadetblue;
+}
+
+.my-style {
+  color: rgb(240, 92, 12);
+  border: 5px;
+}
+button {
+  border-radius: 20%;
+  color: brown;
+  display: block;
+  margin: 10px;
+}
