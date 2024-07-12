@@ -18,12 +18,12 @@ function play(text) {
       break;
 
     case "Button-B":
-      var audioB = new Audio("`B.mp3`");
+      var audioB = new Audio("B.mp3");
       audioB.play();
       break;
 
     case "Button-C":
-      var audioC = new Audio("`C.mp3`");
+      var audioC = new Audio("C.mp3");
       audioC.play();
       break;
   }
