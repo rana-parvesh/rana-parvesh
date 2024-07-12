@@ -11,3 +11,8 @@ button {
 button:hover {
   background-color: rgba(15, 194, 87, 0.273);
 }
+
+.anim {
+  box-shadow: 0 15px 18px 0;
+  opacity: 0.5;
+}

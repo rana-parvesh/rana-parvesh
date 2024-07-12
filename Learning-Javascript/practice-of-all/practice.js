@@ -313,6 +313,109 @@ for (var i = 1; i <= 1; i++) {
   } else {
     console.log("result is hungry");
   }
-}*/
+}
 
 document.getElementById("shoron").innerHTML = "My name is Rana";
+document.querySelector("h1").innerHTML = "  i am student";
+document.querySelector(".hasi").innerHTML = "  i am student";
+
+//heackerranked problem 02
+
+function stringAnagram(dictionary, query) {
+  function normalize(str) {
+    return str.split("").sort().join("");
+  }
+
+  const dictionaryCount = {};
+  dictionary.forEach((word) => {
+    const normalizedWord = normalize(word);
+    if (dictionaryCount[normalizedWord]) {
+      dictionaryCount[normalizedWord]++;
+    } else {
+      dictionaryCount[normalizedWord] = 1;
+    }
+  });
+
+  return query.map((q) => {
+    const normalizedQuery = normalize(q);
+    return dictionaryCount[normalizedQuery] || 0;
+  });
+}
+
+function main() {
+  const dictionary = ["listen", "silent", "enlist", "google", "gooegl"];
+  const query = ["listen", "enlists", "google", "googles"];
+  const result = stringAnagram(dictionary, query);
+  console.log(result); // Output should be [3, 0, 2, 0]
+}
+
+main();
+
+// javascript map
+
+// Creating a new Map
+let map = new Map();
+
+// Adding key-value pairs
+map.set("name", "John");
+map.set("age", 30);
+map.set(true, "boolean value");
+map.set({ key: "object" }, "object value");
+
+// Getting values
+console.log(map.get("name")); // Output: John
+console.log(map.get(true)); // Output: boolean value
+
+// Checking existence of a key
+console.log(map.has("age")); // Output: true
+console.log(map.has("address")); // Output: false
+
+// Deleting a key-value pair
+map.delete("age");
+console.log(map.has("age")); // Output: false
+
+// Getting the size of the Map
+console.log(map.size); // Output: 3
+
+// Iterating over Map using forEach
+map.forEach((value, key) => {
+  console.log(`${key}: ${value}`);
+});
+
+// Output:
+// name: John
+// true: boolean value
+// [object Object]: object value
+
+// Using keys, values, and entries iterators
+for (let key of map.keys()) {
+  console.log(key);
+}
+
+for (let value of map.values()) {
+  console.log(value);
+}
+
+for (let [key, value] of map.entries()) {
+  console.log(`${key}: ${value}`);
+}
+
+// Clearing the Map
+map.clear();
+console.log(map.size); // Output: 0
+
+//now my practice
+*/
+var number = [1, 2, 3, 4, 5];
+
+var result = number.map((num) => {
+  return 3 * num;
+});
+console.log(number);
+console.log(result);
+
+let math = (a, b) => {
+  // others work
+  return a + b;
+};
+console.log(math(50, 60));
