@@ -405,7 +405,7 @@ map.clear();
 console.log(map.size); // Output: 0
 
 //now my practice
-*/
+
 var number = [1, 2, 3, 4, 5];
 
 var result = number.map((num) => {
@@ -419,3 +419,59 @@ let math = (a, b) => {
   return a + b;
 };
 console.log(math(50, 60));
+
+let p1 = "rana";
+let p2 = "shoron";
+let relation = true;
+
+if (p1 == "rana") {
+  if (p2 == "shoron") {
+    if (relation == true) {
+      console.log("awesome");
+    } else {
+      console.log("very bad");
+    }
+  }
+}
+
+// shorot waye
+var p3 = "taniya";
+var p4 = "jemiim";
+var p6 = true;
+
+if ("taniya" == p3 && "jemiim" == p4 && true == p6) {
+  console.log("both are one");
+} else {
+  console.log("they are differant");
+}
+/*/
+function rana(name, subject, contact) {
+  this.name = name;
+  this.subject = subject;
+  this.contact = contact;
+  this.print = function () {
+    console.log(this.name);
+    console.log(this.subject);
+    console.log(this.contact);
+  };
+}
+
+var student1 = new rana(
+  "rana parvesh",
+  ["accounting", "management", "marketing"],
+  "01794950779"
+);
+var student2 = new rana(
+  "shhoron hossain",
+  ["civis", "", "bangla"],
+  "01783128139"
+);
+var student3 = new rana(
+  "raihan",
+  ["camistry", "botany", "zlozy"],
+  "01516381052"
+);
+
+student1.print();
+student2.print();
+student3.print();

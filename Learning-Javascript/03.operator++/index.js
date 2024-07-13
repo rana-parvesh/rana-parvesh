@@ -27,7 +27,7 @@ x = y;
 var rana = 15;
 //rana += 2; //herre is the (rana = 15+2)
 //rana -= 2; //herre is the (rana = 15-2)
-rana *= 2; //herre is the (rana = 15*2)
+// rana *= 2; //herre is the (rana = 15*2)
 //rana /= 2; //herre is the (rana = 15/2)
 //rana %= 2; //herre is the (rana = 15%2)
 

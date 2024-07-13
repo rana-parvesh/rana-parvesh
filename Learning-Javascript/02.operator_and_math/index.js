@@ -25,7 +25,7 @@ console.log("total cost of eggs", totalEgg, "taka");
 
 //area of circle calculator = pi * r(squire)
 
-var redius = 7;
+const redius = 7;
 const pi = 3.14159;
 var circle = pi * (redius * redius);
 

@@ -9,7 +9,7 @@ console.log(container);
 
 var container = ["beef", "vegetable", "fruits", "others"];
 
-console.log(container[4]);
+console.log(container[3]);
 
 container[4] = "rana";
 console.log(container[4]); //actual number
