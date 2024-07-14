@@ -444,7 +444,7 @@ if ("taniya" == p3 && "jemiim" == p4 && true == p6) {
 } else {
   console.log("they are differant");
 }
-/*/
+
 function rana(name, subject, contact) {
   this.name = name;
   this.subject = subject;
@@ -475,3 +475,29 @@ var student3 = new rana(
 student1.print();
 student2.print();
 student3.print();
+
+
+var days = 31;
+var star = 7;
+
+console.log("\n\n calander of june 2024\n");
+console.log("sun   mon   tue   wed   thu    fri   sat");
+
+for (var i = 0; i <= 5; i++) {
+  var dayrow = "";
+  for (var j = 0; j < 7; j++) {
+    var currentday = 7 * i + j - start;
+    if (currentday > days) {
+      break;
+    } else if (currentday < 1) {
+      currentday = "  ";
+      if (currentday > 9) {
+        dayrow += currentday = "    ";
+      } else {
+        dayrow += currentday + "     ";
+      }
+    }
+  }
+  console.log(dayrow);
+}
+*/

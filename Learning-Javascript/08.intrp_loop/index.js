@@ -1,5 +1,5 @@
 // while loop
-
+/*
 var i = 0; //its normal loop
 while (i < 10) {
   i++;
@@ -54,7 +54,7 @@ var i = 0
 for ( iniitailization, condition, steping){
 
 }
-*/
+*/ /*
 var i;
 for (i = 0; i <= 10; i++) {
   // where i+=2 for the couple
@@ -99,7 +99,7 @@ s5 =0 1 1 2 3 5 8 13
 */
 
 // s1 = 2 4 6 8 10 12 14
-
+/*
 var s = "";
 var n;
 for (var i = 1; i < 10; i++) {
@@ -187,7 +187,7 @@ for (var i = 1; i <= range; i++) {
   }
 }
 console.log(divisors);
-
+*/
 // the calander print of for loop
 var mounth = "december 2024";
 var days = 30;
