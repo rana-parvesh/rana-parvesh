@@ -1,3 +1,19 @@
 * {
-  background-color: rgba(162, 116, 55, 0.494);
+  background-color: rgba(28, 63, 63, 0.797);
+}
+div {
+  font-family: sans-serif;
+  font-weight: 700;
+  margin: 10px;
+  padding: 10px;
+  /* text-align: center; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 300px;
+  color: rgb(234, 241, 241);
+  background-color: black;
+  border: 5px solid teal;
+  border-radius: 20px;
+  /* inline-size: 10px; */
 }

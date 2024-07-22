@@ -501,3 +501,219 @@ for (var i = 0; i <= 5; i++) {
   console.log(dayrow);
 }
 */
+/*
+// fat arrey
+
+var hobby = {
+  person: "Rana",
+  hobby: ["playing", "eating", "travelling", "singing", "danceing"],
+  printhobby: function () {
+    this.hobby.forEach((r) => {
+      console.log(`${this.person} is also like ${r}`);
+    });
+  },
+};
+hobby.printhobby();
+
+// arrey.find()
+
+var number = [25, 52, 36, 552, 74];
+
+var result = number.find((cv, ci, arr) => {
+  console.log(ci);
+  console.log(arr);
+  return cv % 3;
+});
+console.log(result);
+
+//arrey.slice() -positive
+
+var numbers = [123, 654, 987, 963, 369, 147, 236];
+var result = numbers.slice(2, 4);
+console.log(result);
+
+//arrey.slice() -negetive
+
+var numbers = [123, 654, 987, 963, 369, 147, 236];
+var result = numbers.slice(-2, 6);
+console.log(result);
+
+// arrey.splice() / positive methods
+
+var numbers = [123, 654, 987, 963, 369, 147, 236];
+var result = numbers.splice(2, 1, 25, 65, 34);
+console.log(result);
+console.log(numbers);
+
+// arrey.splice() / negetive methods
+
+var numbers = [123, 654, 987, 963, 369, 147, 236];
+var result = numbers.splice(-2, 1, 25, 65, 34);
+console.log(result);
+console.log(numbers);
+
+
+// arrey.map() methods
+
+var numbers = [123, 654, 987, 963, 369, 147, 236];
+var result = numbers.map((n) => {
+  return n / 2;
+});
+console.log(result);
+
+
+// arrey.push() methods
+
+var numbers = [123, 654, 987, 963, 369, 147, 236];
+var result = numbers.push(25, 26, 27);
+
+console.log(result);
+console.log(numbers);
+
+// arrey.pop() methods
+
+var numbers = [123, 654, 987, 963, 369, 147, 236];
+var result = numbers.pop(1);
+
+console.log(result);
+console.log(numbers);
+
+// arrey.concut()
+
+var arr1 = [25, 26, 27, 28, 29, 30];
+var arr2 = [31, 32, 33, 34, 35, 36];
+
+result = arr1.concat(arr2);
+console.log(result);
+
+// arrey . reduce() methods
+var arrey = [231, 123, 145, 256, 254, 365, 852];
+var result = arrey.reduce((pv, fv) => {
+  return pv + fv;
+});
+console.log(result);
+
+
+for (var i = 0; i < 10; i++) {
+  // console.log(i);
+}
+
+// its the normal loop
+
+//now write the for in loop
+
+var myObject = {
+  name: "rana",
+  department: "management",
+  birth_date: "25/01/1999",
+};
+
+for (property in myObject) {
+  console.log(property);
+}
+var myObject = "i also like play football";
+for (element of myObject) {
+  console.log(element);
+}
+
+// ternary operator
+
+var rana = 10;
+
+if (rana > 20) {
+  console.log("rana was grater than 20");
+} else {
+  console.log("rana was less than 20");
+}
+//its a normal condition
+//now write the ternary operator
+
+let shoron = 100;
+var result = shoron > 20 ? "greater than" : "less than";
+console.log(`shoron was ${result} 20`);
+
+
+//spread operator
+
+// concut methods
+var rana = [12, 14, 16, 18, 20, 22];
+var shoron = [24, 26, 28, 30, 32, 34];
+var relation = [...rana, ...shoron];
+
+console.log(relation);
+
+// when use to the object of spread operator
+
+var obj1 = {
+  name: "rana",
+  works: "web developer",
+};
+
+var obj2 = {
+  name: "shoron",
+  works: "graphic designer",
+};
+
+console.log({ ...obj1 }, { ...obj2 });
+
+// use normal number
+
+var number = [1, 2, 3, 4, 5, 6, 7, 8, 9];
+var result = [...number];
+
+number.push(12, 14, 20);
+number.pop();
+
+console.log(number);
+console.log(result);
+
+
+// rest operator
+//use arguments
+
+function rana() {
+  console.log(arguments);
+}
+rana(10, 12, 13, 14, 15, 16, 17, 20);
+
+// now use the rest operator
+// rest operator allwayes use to the last parmeter 
+
+function taniya(a, ...params) {
+  console.log(a, params);
+}
+taniya(20, 220, 24, 26, 28, 30, 21);
+
+
+var a = "";
+
+if (a) {
+  console.log("the value was true");
+} else {
+  console.log("the value was false");
+}
+
+var b = 25;
+result = b ? "true" : "false";
+console.log("the value was", result);
+
+
+// defults parameters
+
+function rana(rana = 10) {
+  console.log(rana);
+}
+rana(52);*/
+
+// fat arrow
+
+var rana = {
+  learn: "javascipt",
+  framework: ["react", "angular", "vue"],
+  printDisply: function () {
+    this.framework.forEach((ex) => {
+      console.log(`${this.learn} framework was ${ex}`);
+    });
+  },
+};
+rana.printDisply();
