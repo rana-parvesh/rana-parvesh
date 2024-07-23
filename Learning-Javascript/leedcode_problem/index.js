@@ -8,21 +8,19 @@ counter.increment(); // 6
 counter.reset(); // 5
 counter.decrement(); // 4*/
 
-function createCounter(init) {
-  let current = init;
+function rana(i) {
+  let current = i;
 
   return {
     increment: () => ++current,
-    reset: () => (current = init),
+    reset: () => (current = i),
     decrement: () => --current,
   };
 }
-
 // Example usage:
-const init = 5;
+const i = 5;
 const calls = ["increment", "reset", "decrement"];
-const counter = createCounter(init);
+const counter = rana(i);
 
-const results = calls.map((method) => counter[method]());
-
+const results = calls.map((rcv) => counter[rcv]());
 console.log(results); // Output: [6, 5, 4]

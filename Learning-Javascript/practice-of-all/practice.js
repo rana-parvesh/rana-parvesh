@@ -703,7 +703,7 @@ console.log("the value was", result);
 function rana(rana = 10) {
   console.log(rana);
 }
-rana(52);*/
+rana(52);
 
 // fat arrow
 
@@ -717,3 +717,11 @@ var rana = {
   },
 };
 rana.printDisply();
+*/
+
+var arr = [25, 26, 27, 28, 29, 30];
+var arr1 = [...arr];
+arr.push(31, 32, 33, 34);
+
+console.log(arr);
+console.log(arr1);
