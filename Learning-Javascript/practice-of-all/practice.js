@@ -775,5 +775,22 @@ var rana = 250;
 var shoron = 2500;
 [shoron, rana] = [rana, shoron];
 console.log(rana, shoron);
-
 */
+
+// var rana = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
+// practice   function
+function serial(start) {
+  var now = start;
+  return function () {
+    return now++;
+  };
+}
+var counter = serial(0);
+counter();
+for (let i = 0; i < 10; i++) {
+  console.log(counter());
+}
+var rana = "Rana is a good Boy";
+for (var i = 0; i < 10; i++) {
+  console.log(rana);
+}
