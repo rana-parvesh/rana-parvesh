@@ -717,7 +717,7 @@ var rana = {
   },
 };
 rana.printDisply();
-*/
+
 
 var arr = [25, 26, 27, 28, 29, 30];
 var arr1 = [...arr];
@@ -725,3 +725,55 @@ arr.push(31, 32, 33, 34);
 
 console.log(arr);
 console.log(arr1);
+
+//old methods
+
+var obj = {
+  personOne: "shoron hossain",
+  addres: "mill road",
+  house: 24,
+  age: 25,
+  skills: {
+    education: "BSS",
+    works: " graphic design",
+    family: {
+      mom: "asma begum",
+      dad: "mahbub alam",
+    },
+  },
+};
+var {
+  skills: { family: F },
+} = obj;
+console.log(F, "\n\n");
+//new methods
+
+var obj1 = {
+  personOne: "rana parvesh",
+  addres: "choto-sultanpur",
+  house: 132,
+  age: 25,
+  skills: {
+    education: "BBA",
+    works: " Web-developer",
+    family: {
+      mom: "parul begum",
+      dad: "kalim uddin",
+    },
+  },
+};
+var {
+  skills: {
+    family: { mom: x }, // use alias
+  },
+} = obj1;
+console.log(x);
+
+//
+
+var rana = 250;
+var shoron = 2500;
+[shoron, rana] = [rana, shoron];
+console.log(rana, shoron);
+
+*/
