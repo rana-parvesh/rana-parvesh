@@ -792,5 +792,12 @@ for (let i = 0; i < 10; i++) {
 }
 var rana = "Rana is a good Boy";
 for (var i = 0; i < 10; i++) {
-  console.log(rana);
+  // console.log(rana);
 }
+// }
+
+var rana = [250, 231, 300];
+var shoron = [250, 231, 300];
+
+var result = [...rana, ...shoron];
+console.log(result);

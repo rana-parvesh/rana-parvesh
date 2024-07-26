@@ -14,7 +14,6 @@ console.log(a);
 var rana = ["beef", "suger", "rice"];
 var shoron = ["fish", "coffie", "tea"];
 var relation = [...rana, ...shoron];
-
 console.log(relation);
 
 // object methods
