@@ -775,7 +775,7 @@ var rana = 250;
 var shoron = 2500;
 [shoron, rana] = [rana, shoron];
 console.log(rana, shoron);
-*/
+
 
 // var rana = [1, 2, 3, 4, 5, 6, 7, 8, 9, 10];
 // practice   function
@@ -801,3 +801,34 @@ var shoron = [250, 231, 300];
 
 var result = [...rana, ...shoron];
 console.log(result);
+*/
+
+// 29/07/24
+
+//operator
+/*
+var rana = 25;
+var shoron = 20;
+
+if (shoron > rana) {
+  console.log("shoron is greater than rana");
+} else {
+  console.log("rana is greater than shoron");
+}
+
+
+//ternary operator
+
+var result =
+  shoron > rana ? "shoron is elder than rana" : "rana is elder than shoron";
+console.log(result);
+*/
+
+// loop
+
+var s = 5;
+var result = "";
+
+for (var i = s; i < 10; i++) {
+  console.log(i);
+}
