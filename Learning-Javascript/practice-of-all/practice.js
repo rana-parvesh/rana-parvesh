@@ -824,11 +824,10 @@ var result =
 console.log(result);
 */
 
-// loop
+//arrey.filter
 
-var s = 5;
-var result = "";
-
-for (var i = s; i < 10; i++) {
-  console.log(i);
-}
+var number = [12, 13, 14, 15, 161, 875];
+var result = number.filter((pv) => {
+  return pv > 165;
+});
+// console.log(result);

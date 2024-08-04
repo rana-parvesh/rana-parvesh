@@ -21,22 +21,28 @@ tel, file
 // <select>
 //<textarea>
 */
-// now learn to chenge event
+// now learn to change event
 
 console.clear();
-/*
-var input = document.querySelector("input");
-input.addEventListener("change", ranaFun);
 
-function ranaFun(e) {
-  //   console.log(e.target);
-  //   console.log(e.target.className);
-  //   console.log(e.target.id);
-  console.log(e.target.value);
+const inputs = document.querySelectorAll("input[name=program]");
+// console.log(inputs);
+
+Array.from(inputs).map((inputs) => {
+  inputs.addEventListener("change", programHandler);
+});
+
+function programHandler(e) {
+  if (e.target.checked) {
+    console.log(e.target.value);
+  }
 }
-*/
 
-const programs = document.querySelectorAll("input[name = program]");
-console.log(programs);
+// input.addEventListener("change", ranaFun);
 
-Array.from(programs).map(programs);
+// function ranaFun(e) {
+//   console.log(e.target);
+//   console.log(e.target.className);
+//   console.log(e.target.id);
+// console.log(e.target.value);
+// }

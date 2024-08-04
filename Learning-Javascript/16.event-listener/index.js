@@ -25,10 +25,9 @@ var len = document.querySelectorAll(".myButton").length; //for total lenghth
 
 //for re use this loop
 for (var i = 0; i < len; i++) {
-  document
-    .querySelectorAll(".myButton")
-    [i].addEventListener("click", function () {
+  document.querySelectorAll(".myButton")[i].addEventListener("click"),
+    () => {
       var text = this.innerHTML;
-      document.querySelector("h1").innerHTML = text + "is clicked";
-    });
+      document.querySelector("h1").innerHTML = text + " is clicked";
+    };
 }
