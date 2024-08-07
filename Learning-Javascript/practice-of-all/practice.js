@@ -824,10 +824,30 @@ var result =
 console.log(result);
 */
 
-//arrey.filter
+// condition
 
-var number = [12, 13, 14, 15, 161, 875];
-var result = number.filter((pv) => {
-  return pv > 165;
-});
-// console.log(result);
+let rana = 25;
+let shoron = 26;
+
+if (rana > shoron) {
+  console.log("rana is greater than shoron");
+} else {
+  console.log("shoron is greater than rana");
+}
+
+// ternary operator
+
+for (var i = 0; i <= 5; i++) {
+  result =
+    rana > shoron
+      ? "rana is greater than shoron"
+      : "shoron is greater than rana";
+  console.log([i], result);
+}
+
+//lets do  the normal functionj
+
+function tani(name, age) {
+  console.log(name, age);
+}
+tani("taniya", 19);
