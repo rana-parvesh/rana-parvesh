@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>submit-event</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <form action="">
+      <div>
+        <label for="name"
+          >Name :
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="enter your name"
+            required
+            autofocus
+        /></label>
+      </div>
+      <div>
+        <label for="email"
+          >Email :
+          <input type="email" id="email" name="email" required size="20"
+        /></label>
+      </div>
+      <div>
+        <label for="password"
+          >Password :
+          <input
+            type="password"
+            id="password"
+            name="password"
+            minlength="4"
+            maxlength="8"
+        /></label>
+      </div>
+    </form>
+    <div>
+      <input class="submit" type="submit" value="sign up" required />
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>

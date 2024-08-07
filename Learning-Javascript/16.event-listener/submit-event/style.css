@@ -1,0 +1,17 @@
+div {
+  margin-bottom: 10px;
+}
+.wrap {
+  color: aliceblue;
+  background-color: rgb(92, 117, 117);
+  margin: 10px;
+  padding: 10px;
+  border-radius: 15px;
+  height: 250px;
+}
+h1 {
+  text-align: center;
+}
+.submit {
+  text-align: center;
+}

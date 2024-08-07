@@ -851,3 +851,18 @@ function tani(name, age) {
   console.log(name, age);
 }
 tani("taniya", 19);
+
+// object
+
+const myObject = {
+  name: "rana parvesh",
+  address: "choto sultanpur",
+  hobby: {
+    play: "cricket",
+    tour: "sajek",
+    sleep: "also like sleeping",
+  },
+};
+var { hobby: h } = myObject;
+console.log(myObject);
+console.log(h);
