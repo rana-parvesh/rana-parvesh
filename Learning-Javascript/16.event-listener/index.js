@@ -1,5 +1,5 @@
 //single elements
-/*
+
 document.querySelector("button").addEventListener("click", rana);
 
 function rana() {
@@ -17,7 +17,6 @@ var myVar = document.querySelector("h1");
 myVar.addEventListener("mouseout", function () {
   myVar.classList.remove("my-style");
 });
-*/
 
 //multriple elements
 
