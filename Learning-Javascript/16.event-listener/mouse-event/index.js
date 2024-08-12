@@ -23,7 +23,6 @@ div.addEventListener("click", (e) => {
   console.log(e.target.innerHTML); // inner text , text content
 });
 
-/*
 div.addEventListener("dblclick", () => {
   console.log("double click");
 });
@@ -54,7 +53,6 @@ div.addEventListener("mousemove", (e) => {
 
   //ANOTHER ofsetX and ofsetY
 });
-*/
 
 var buttons = document.querySelectorAll(".btn");
 console.log(buttons);
