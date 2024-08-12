@@ -12,6 +12,7 @@ window.addEventListener("unload", () => {
   console.log("unload");
 });
 */
+
 // scroll
 window.addEventListener("scroll", () => {
   console.log("scroll");
