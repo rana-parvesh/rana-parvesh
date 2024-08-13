@@ -866,3 +866,7 @@ const myObject = {
 var { hobby: h } = myObject;
 console.log(myObject);
 console.log(h);
+
+function hello() {
+  return "hello edabit.com";
+}
