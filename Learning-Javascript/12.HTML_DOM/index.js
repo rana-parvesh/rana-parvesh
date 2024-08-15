@@ -1,7 +1,7 @@
 //get elements by id
 
 var head = document.getElementById("shoron");
-head.innerHTML = "my name is Rana";
+head.innerHTML = "my name is hasnain";
 
 var head2 = document.getElementsByClassName("hasi")[0];
 head2.innerHTML = "i'm 30 years old";
