@@ -14,5 +14,5 @@ console.log(result);
 // its continew to the next ++ and dont change the main arrey
 
 var rana = [250, 452, 236, 123, 456, 789];
-var result = rana.filter((cv) => cv > 160);
+var result = rana.filter((cv) => cv > 260);
 console.log(result);
