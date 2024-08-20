@@ -38,7 +38,7 @@ const task2 = () => {
   return new Promise((resolve, reject) => {
     setInterval(() => {
       resolve("task two is complete");
-    }, 5000);
+    }, 3000);
   });
 };
 
@@ -53,17 +53,19 @@ const task4 = () => {
     resolve("task four is complete");
   });
 };
+
+// task1()
+//   .then((res) => console.log(res))
+//   .then(task2)
+//   .then((res) => console.log(res))
+//   .then(task3)
+//   .then((res) => console.log(res))
+//   .then(task4)
+//   .then((res) => console.log(res));
+//   .catch((err)=>console.log(err))
+
 /*
-task1()
-  .then((res) => console.log(res))
-  .then(task2)
-  .then((res) => console.log(res))
-  .then(task3)
-  .then((res) => console.log(res))
-  .then(task4)
-  .then((res) => console.log(res));
-  .catch((err)=>console.log(err))
-*/
+// ohter waye
 task1()
   .then((res) => {
     console.log(res);
@@ -83,3 +85,24 @@ task1()
   .catch((err) => {
     console.log(err); // This should now catch the rejection from task3
   });
+*/
+
+// await function ES7
+const callAllTask = async () => {
+  try {
+    let t1 = await task1();
+    console.log(t1);
+
+    let t2 = await task2();
+    console.log(t2);
+
+    let t3 = await task3();
+    console.log(t3);
+
+    let t4 = await task4();
+    console.log(t4);
+  } catch (err) {
+    console.log(err);
+  }
+};
+callAllTask();
