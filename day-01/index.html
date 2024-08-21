@@ -1,12 +1,41 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Login Form</title>
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
+    <div class="container">
+      <h1 class="title">GeeksforGeeks</h1>
+      <h3 class="login">Enter login credentials</h3>
+
+      <div class="input-group">
+        <label for="username">User name:</label>
+        <input
+          type="text"
+          id="username"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input
+          type="password"
+          id="password"
+          placeholder="Enter your password"
+          required
+        />
+      </div>
+
+      <button type="submit" class="submit-btn">Submit</button>
+
+      <p class="register">Not Registered? <a href="#">Create an account</a></p>
+    </div>
+
     <script src="index.js"></script>
   </body>
 </html>
