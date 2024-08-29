@@ -890,7 +890,7 @@ function hello() {
 }
 console.log(hello());
 */
-
+/*
 function fizzBuzz(n) {
   for (let i = 1; i <= n; i++) {
     if (i % 3 === 0 && i % 5 === 0) {
@@ -909,3 +909,41 @@ function main() {
   const n = parseInt(readLine().trim(), 10);
   fizzBuzz(n);
 }
+  */
+/*
+// var marks = parseInt(prompt("Enter your number : "));
+var marks = 75;
+var sum = "";
+
+if (80 < marks) {
+  console.log("A+");
+} else if (70 < marks) {
+  console.log("A");
+} else if (60 < marks) {
+  console.log("A-");
+} else if (50 < marks) {
+  console.log("B");
+} else if (40 < marks) {
+  console.log("C");
+} else if (33 < marks) {
+  console.log("D");
+}
+// */
+
+// var marks1 = parseInt(prompt("Enter your 1st number : "));
+// document.write("bangla : ", marks1);
+// var marks2 = parseInt(prompt("Enter your 2nd number : "));
+// document.write(" english : ", marks2);
+// var marks3 = parseInt(prompt("Enter your 3rd number : "));
+// document.write(" accounting : ", marks3);
+// var marks4 = parseInt(prompt("Enter your 4th number : "));
+// document.write(" management : ", marks4);
+// var marks5 = parseInt(prompt("Enter your 5th number : "));
+// document.write(" marketing : ", marks5);
+// var marks6 = parseInt(prompt("Enter your 6th number : "));
+// document.write(" ICT : ", marks6);
+// var sum = [marks1, marks2, marks3, marks4, marks5, marks6];
+// let total = sum.reduce((pv, fv) => pv + fv);
+// document.write(`Total marks : `, total);
+
+//loop

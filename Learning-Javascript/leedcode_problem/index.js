@@ -23,4 +23,38 @@ const calls = ["increment", "reset", "decrement"];
 const counter = rana(i);
 
 const results = calls.map((rcv) => counter[rcv]());
-console.log(results); // Output: [6, 5, 4]
+// console.log(results); // Output: [6, 5, 4]
+
+//Example 1:
+
+// Input: func = () => expect(5).toBe(5);
+// Output: {"value": true}
+// Explanation: 5 === 5 so this expression returns true.
+/**
+ * @param {string} val
+ * @return {Object}
+ */
+var expect = function (val) {
+  return {
+    toBe: function (expected) {
+      if (val === expected) {
+        return true;
+      } else {
+        throw new Error("Not Equal");
+      }
+    },
+    notToBe: function (expected) {
+      if (val !== expected) {
+        return true;
+      } else {
+        throw new Error("Equal");
+      }
+    },
+  };
+};
+
+/**
+ * Usage examples:
+ * expect(5).toBe(5); // true
+ * expect(5).notToBe(5); // throws "Equal"
+ */

@@ -99,7 +99,8 @@ s5 =0 1 1 2 3 5 8 13
 */
 
 // s1 = 2 4 6 8 10 12 14
-/*
+console.log("\n\n");
+
 var s = "";
 var n;
 for (var i = 1; i < 10; i++) {
@@ -150,6 +151,7 @@ for (var i = 1; i < 10; i++) {
   s = s + n + "  ";
 }
 console.log("series 5=", s);
+console.log("\n");
 
 // multipilation table
 var series = ""; // Initialize series as an empty string
@@ -162,17 +164,8 @@ for (var i = 1; i <= 10; i++) {
 }
 console.log(series);
 
-var rana;
-for (var i = 1; i <= 10; i++) {
-  rana = i + " = ";
-  for (var j = 1; j <= 10; j++) {
-    rana += i * j + " ";
-  }
-  console.log(rana);
-}
-
 // the divisors
-
+/*
 var n = 144;
 var range = math.cail(math.sqrt(n));
 var divisors = "";
@@ -189,9 +182,9 @@ for (var i = 1; i <= range; i++) {
 console.log(divisors);
 */
 // the calander print of for loop
-var mounth = "december 2024";
-var days = 30;
-var start = 5;
+var mounth = "August 2024";
+var days = 31;
+var start = 3;
 
 console.log("\n\n calander of ", mounth, "\n");
 console.log("sun  mon  tue  wed  thu  fri  sat");
