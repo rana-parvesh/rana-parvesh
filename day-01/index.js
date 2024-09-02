@@ -1,4 +1,5 @@
 // Constructor to initialize instance variables
+/*
 class Employee {
   constructor(firstName, lastName, salary) {
     this.firstName = firstName;
@@ -61,3 +62,11 @@ function employeeTest() {
 
 // Run the test function
 employeeTest();
+*/
+// Add event listener for the Submit button
+document
+  .querySelector(".submit-btn")
+  .addEventListener("click", function (event) {
+    event.preventDefault(); // Prevent the default form submission
+    window.location.href = "index2.html"; // Redirect to index2.html
+  });

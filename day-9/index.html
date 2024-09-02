@@ -1,4 +1,4 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
@@ -7,6 +7,41 @@
     <link rel="stylesheet" href="index.css" />
   </head>
   <body>
-    <script src="index.js"></script>
+    <!-- DOM start  -->
+    <!-- 
+    <h1 class="test">Hello Rana</h1>
+    <h1 id="test">Hello Rana</h1>
+    <h1>Hello Rana</h1>
+
+
+    <script>
+      document.querySelector(".test").innerHTML = "hellow shoron";
+      document.querySelector("#test").innerHTML = "hellow shoron";
+      document.getElementsByTagName("h1")[2].innerHTML = "hellow hasi";
+    </script>
+    -->
+
+    <!-- finding HTML elements using.documents.forms  -->
+
+    <p>Javascript HTML DOM</p>
+    <form action="" id="frm">
+      First name: <input type="text" name="fname" value="Donald"><br>
+  Last name: <input type="text" name="lname" value="Duck"><br><br>
+  <input type="submit" value="Submit">
+</form> 
+
+<p>These are the values of each element in the form:</p>
+
+<p id="demo"></p>
+    </form>
+    <script>
+      const x = document.forms["frm"];
+let text = "";
+for (let i = 0; i < x.length ;i++) {
+  text += x.elements[i].value + "<br>";
+}
+document.getElementById("demo").innerHTML = text;
+    </script>
+    <!-- <script src="index.js"></script> -->
   </body>
 </html>

@@ -4,7 +4,7 @@
   - Arrow functions
   - Parameters এবং Return values
 */
-
+/*
 //01. syntax
 function functionName(parameters) {
   // Code to be executed
@@ -68,3 +68,5 @@ const person = {
 };
 
 person.greet(); // Output: Hello, Rana
+*/
+// practice
