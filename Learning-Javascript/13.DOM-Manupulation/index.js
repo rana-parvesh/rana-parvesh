@@ -5,7 +5,7 @@
 //
 DOM Methd = - getElementsById()
 DOM properties = innerHTML
-
+*/
 
 var head3 = document.createElement("h1");
 var text = document.createTextNode("this is new div");
@@ -15,4 +15,4 @@ var myDiv = document.getElementById("myDiv");
 myDiv.appendChild(head3);
 
 var head2 = document.getElementsByTagName("h1")[1];
-myDiv.removeChild(head2);*/
+myDiv.removeChild(head2);

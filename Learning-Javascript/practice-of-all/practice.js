@@ -946,4 +946,4 @@ if (80 < marks) {
 // let total = sum.reduce((pv, fv) => pv + fv);
 // document.write(`Total marks : `, total);
 
-//loop
+var change = (document.querySelector(".rana").innerHTML = "shoron");
