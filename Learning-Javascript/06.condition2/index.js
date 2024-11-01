@@ -2,7 +2,6 @@
 
 var result = 70;
 console.log(result);
-
 if (80 <= result) {
   console.log("the result is A+");
 } else if (70 <= result) {
@@ -29,7 +28,6 @@ if (n > 0) {
 console.log(result);
 
 // even & odd
-
 var n = 0;
 var result;
 var reminder = n % 2;
@@ -44,7 +42,6 @@ if (0 == n) {
 console.log(result);
 
 // examle some logic
-
 var movieRating = "pg";
 var age = 12;
 if ("pg" == movieRating && age >= 13) {

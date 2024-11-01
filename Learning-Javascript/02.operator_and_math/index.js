@@ -29,7 +29,7 @@ const redius = 7;
 const pi = 3.14159;
 var circle = pi * (redius * redius);
 
-console.log("area of circle is", circle, "sq inchi");
+console.log("area of circle is", circle, "square inch");
 
 //usd to bdt calculator
 var usdToBdt = 111.15;
@@ -37,7 +37,7 @@ var bdt = 500000;
 var usd = bdt / usdToBdt;
 console.log("$", usd);
 
-//reminder operator (its seen to the last itsem )
+//reminder operator (its seen to the last item )
 
 var n1 = 51; //or (ever =50,40,52)
 var n2 = 2;

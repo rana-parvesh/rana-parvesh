@@ -1,5 +1,4 @@
 // nesting
-
 var p1 = "rana";
 var p2 = "shoron";
 var areTheyBrother = true;
@@ -12,9 +11,7 @@ if ("rana" == p1) {
     }
   }
 }
-
 //another waye to easy
-
 var p3 = "raihan";
 var p4 = "jimu";
 var areTheyBrother = false;
@@ -25,7 +22,6 @@ if ("raihan" == p3 && "jimu" == p4 && areTheyBrother) {
 }
 
 //or operator 2,3,5,7
-
 var n = 2;
 
 if (n < 10 && (2 == n || 3 == n || 5 == n || 7 == n)) {

@@ -16,3 +16,5 @@ const x = 25;
 const y = "raan";
 const z = x + y;
 console.log(z);
+
+// practice

@@ -8,7 +8,7 @@ console.log(a, b); // this is the increment operator
 var x;
 var y = 8;
 x = y++;
-console.log("x", x, "y", y);
+console.log("x = ", x, "y = ", y);
 
 /*x = y++
 x = y;
@@ -17,7 +17,7 @@ y = y + 1;*/
 var c;
 var d = 3;
 c = ++d;
-console.log("c", c, "d", d);
+console.log("c = ", c, "d = ", d);
 
 /*x = ++d
 y = y + 1;

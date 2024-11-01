@@ -1,5 +1,5 @@
 // while loop
-/*
+
 var i = 0; //its normal loop
 while (i < 10) {
   i++;
@@ -87,7 +87,7 @@ for (var i = 1; i <= 10; i++) {
   factorial *= i;
   console.log(" factorial of", i, "is", factorial);
 }
-
+*/
 // number series print
 /*
 s0 = 1 2 3 4 5 6 7 8 9 
@@ -97,7 +97,7 @@ s3 =0 3 8 15 24 35 48
 s4 = 1 4 3 8 5 12 7 16
 s5 =0 1 1 2 3 5 8 13
 */
-
+/*
 // s1 = 2 4 6 8 10 12 14
 console.log("\n\n");
 
@@ -127,7 +127,6 @@ for (var i = 1; i < 10; i++) {
 console.log("series 3=", s);
 
 // s4 = 1 4 3 8 5 12 7 16
-
 s = "";
 for (var i = 1; i < 10; i++) {
   n = i;
@@ -180,6 +179,7 @@ for (var i = 1; i <= range; i++) {
   }
 }
 console.log(divisors);
+
 */
 // the calander print of for loop
 var mounth = "August 2024";

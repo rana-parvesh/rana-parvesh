@@ -14,7 +14,6 @@ if (0 == n) {
 console.log(result);
 
 //now right here
-
 var n = 3;
 var result;
 var reminder = n % 2;
@@ -22,9 +21,7 @@ result = 0 == reminder ? "even" : "odd";
 console.log("this numbe is", result);
 
 // negetive or possitive
-
 var n = 1;
 var result;
-
 result = n < 0 ? "negetive" : "positive";
 console.log("this numbe is", result);

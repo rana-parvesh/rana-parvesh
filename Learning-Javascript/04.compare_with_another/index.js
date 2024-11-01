@@ -1,8 +1,8 @@
 //compare item tools = (==,!=,<,>,>=,<=) is use if, else if, else
 
 var a = 52;
+console.log("a = ", a);
 if (a > 60) {
-  console.log(a);
   console.log("the number", a, "is smaller than 20");
 } else if (a > 55) {
   console.log("the number", a, "is smaller than 55");
