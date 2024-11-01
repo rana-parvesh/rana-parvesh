@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.359),
+    rgba(0, 255, 255, 0.316),
+    rgba(238, 130, 238, 0.883),
+    rgba(30, 128, 0, 0.643)
+  );
+}
+/* Basic Unordered List */
+.basic-ul {
+  list-style-type: disc; /* Default bullet style */
+  padding-left: 20px;
+}
+
+/* Basic Ordered List */
+.basic-ol {
+  list-style-type: decimal; /* Default numbers */
+  padding-left: 20px;
+}
+
+/* Custom Bullet List */
+.custom-ul {
+  list-style-type: square; /* Square bullets */
+  padding-left: 30px;
+}
+
+/* Custom Numbered List */
+.custom-ol {
+  list-style-type: upper-roman; /* Roman numerals */
+  padding-left: 30px;
+}
+
+/* Remove List Style */
+.no-style-list {
+  list-style-type: none; /* No bullet or number */
+  padding-left: 0;
+}
+
+/* Advanced: Styling List Items */
+.styled-list li {
+  background-color: rgb(20, 20, 20);
+  margin: 5px 0;
+  padding: 10px;
+  border-radius: 5px;
+  color: aliceblue;
+}
+
+/* Hover Effect on List Items */
+.styled-list li:hover {
+  background-color: rgb(9, 236, 248);
+  color: rgb(240, 240, 244);
+  cursor: pointer;
+}
+
+/* Custom Image for List Items */
+.image-ul {
+  list-style-image: url("https://example.com/custom-icon.png");
+}
+
+/* Advanced: Nested Lists */
+.nested-list ul {
+  list-style-type: circle;
+  padding-left: 20px;
+}

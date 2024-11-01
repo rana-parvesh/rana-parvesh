@@ -1,0 +1,39 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+body {
+  background: rgb(153, 204, 187);
+}
+/* Container to demonstrate overflow properties */
+.container {
+  width: 300px;
+  height: 200px;
+  padding: 10px;
+  border: 2px solid #333;
+  background-color: #f0f0f0;
+  margin-bottom: 20px;
+  overflow: visible; /* Default value */
+}
+
+/* Examples for overflow property */
+.overflow-visible {
+  overflow: visible;
+}
+.overflow-hidden {
+  overflow: hidden;
+}
+.overflow-scroll {
+  overflow: scroll;
+}
+.overflow-auto {
+  overflow: auto;
+}
+
+/* Text content style */
+.content {
+  width: 350px; /* Exceeds container width to trigger overflow */
+  background-color: #ddd;
+}

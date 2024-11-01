@@ -1,0 +1,36 @@
+/* Normal link */
+a {
+  color: blue;
+  text-decoration: none;
+}
+
+/* Hovered link */
+a:hover {
+  color: darkorange;
+  text-decoration: underline;
+}
+
+/* Active link */
+a:active {
+  color: red;
+}
+
+/* Visited link */
+a:visited {
+  color: purple;
+}
+
+/* Button-like link */
+.button-link {
+  display: inline-block;
+  background-color: teal;
+  color: white;
+  padding: 10px 20px;
+  text-decoration: none;
+  border-radius: 5px;
+  transition: background-color 0.3s ease;
+}
+
+.button-link:hover {
+  background-color: darkorange;
+}

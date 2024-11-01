@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: monospace;
+}
+body {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.643),
+    rgba(0, 255, 255, 0.359),
+    rgba(0, 0, 0, 0.443)
+  );
+}
+/* Example 1: Basic Max-Width */
+.container {
+  max-width: 600px;
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* Example 2: Responsive Image */
+.responsive-img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+  margin: 0 auto;
+}
+/* Example 3: Centering Content with Max-Width */
+.content {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: lightcoral;
+}
+
+/* Example 4: Width with Max-Width */
+.box {
+  width: 100%;
+  max-width: 500px;
+  background-color: lightgreen;
+  padding: 20px;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* Example 5: Using Min-Width with Max-Width */
+.flexible-box {
+  min-width: 200px;
+  max-width: 800px;
+  background-color: lightgray;
+  padding: 20px;
+  margin: 10px auto;
+  text-align: center;
+}

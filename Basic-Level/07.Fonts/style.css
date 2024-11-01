@@ -1,0 +1,84 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  border-radius: 30px;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0.622),
+    rgba(0, 0, 255, 0.576),
+    rgba(0, 128, 0, 0.761)
+  );
+}
+/* Basic Font Properties */
+.basic-font {
+  font-family: Arial, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+  font-style: normal;
+  line-height: 1.5;
+  color: #ae2e3d;
+}
+
+/* Font Size in Units */
+.size-em {
+  font-size: 1.5em; /* Relative size based on parent font size */
+}
+
+.size-rem {
+  font-size: 1.5rem; /* Relative to root element font size */
+}
+
+.size-px {
+  font-size: 24px; /* Absolute size */
+}
+
+/* Font Weight and Style */
+.bold-font {
+  font-weight: bold;
+}
+
+.italic-font {
+  font-style: italic;
+}
+/* Custom Font with @font-face */
+@font-face {
+  font-family: "CustomFont";
+  src: url("https://example.com/path/to/font.woff2") format("woff2");
+}
+
+.custom-font {
+  font-family: "CustomFont", sans-serif;
+  font-size: 20px;
+}
+
+/* Font Variant */
+.small-caps {
+  font-variant: small-caps;
+}
+
+/* Text Transform */
+.uppercase {
+  text-transform: uppercase;
+}
+
+.capitalize {
+  text-transform: capitalize;
+}
+
+/* Text Shadow for Depth */
+.shadow-text {
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
+/* Font Smoothing */
+.smooth-text {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}

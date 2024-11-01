@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Position Property Examples</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Position Property Examples</h1>
+
+    <!-- Example 1: Static Position -->
+    <div class="container">
+      <div class="static-box">
+        <p>
+          This is a statically positioned box. It follows the normal flow of the
+          document.
+        </p>
+      </div>
+    </div>
+
+    <!-- Example 2: Relative Position -->
+    <div class="container">
+      <div class="relative-box">
+        <p>
+          This is a relatively positioned box. It’s offset 20px from the top and
+          10px from the left of its original position.
+        </p>
+      </div>
+    </div>
+
+    <!-- Example 3: Absolute Position -->
+    <div class="container absolute-container">
+      <p>
+        This container has relative positioning to contain the absolute box.
+      </p>
+      <div class="absolute-box">
+        <p>
+          This box is positioned absolutely 50px from the top and 50px from the
+          left within the container.
+        </p>
+      </div>
+    </div>
+
+    <!-- Example 4: Fixed Position -->
+    <div class="fixed-box">
+      <p>
+        This box is fixed to the viewport at the top-right corner. It stays here
+        even when scrolling.
+      </p>
+    </div>
+
+    <!-- Example 5: Sticky Position -->
+    <div class="container">
+      <div class="sticky-box">
+        <p>
+          This is a sticky positioned box. It will stick to the top of the
+          container when you scroll past it.
+        </p>
+      </div>
+      <p>
+        Scroll down to see how sticky positioning works. It stays within the
+        flow until the top of the viewport is reached.
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum
+        nisi ut semper condimentum. Vivamus...
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum
+        nisi ut semper condimentum. Vivamus...
+      </p>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Fusce interdum
+        nisi ut semper condimentum. Vivamus...
+      </p>
+    </div>
+  </body>
+</html>

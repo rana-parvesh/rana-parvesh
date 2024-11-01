@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Overflow</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Overflow Property Tutorial</h1>
+    <p>
+      The <strong>overflow</strong> property controls how content is handled
+      when it exceeds the dimensions of its container.
+    </p>
+
+    <!-- Overflow: visible (default) -->
+    <h2>Overflow: Visible (default)</h2>
+    <div class="container overflow-visible">
+      <div class="content">
+        This content overflows the container. Since overflow is set to
+        <strong>visible</strong>, the overflowing part is visible outside the
+        container.
+      </div>
+    </div>
+
+    <!-- Overflow: hidden -->
+    <h2>Overflow: Hidden</h2>
+    <div class="container overflow-hidden">
+      <div class="content">
+        This content overflows the container. With overflow set to
+        <strong>hidden</strong>, the overflowing part is cut off, and no
+        scrollbars appear.
+      </div>
+    </div>
+
+    <!-- Overflow: scroll -->
+    <h2>Overflow: Scroll</h2>
+    <div class="container overflow-scroll">
+      <div class="content">
+        This content overflows the container. With overflow set to
+        <strong>scroll</strong>, both horizontal and vertical scrollbars appear,
+        allowing you to scroll to see the hidden content.
+      </div>
+    </div>
+
+    <!-- Overflow: auto -->
+    <h2>Overflow: Auto</h2>
+    <div class="container overflow-auto">
+      <div class="content">
+        This content overflows the container. With overflow set to
+        <strong>auto</strong>, scrollbars appear only if the content overflows.
+        Here, both scrollbars will appear as the content exceeds the container.
+      </div>
+    </div>
+
+    <h2>Advanced: Overflow-X and Overflow-Y</h2>
+    <p>
+      You can also control overflow for horizontal (X-axis) and vertical
+      (Y-axis) directions separately using <strong>overflow-x</strong> and
+      <strong>overflow-y</strong> properties.
+    </p>
+
+    <div class="container" style="overflow-x: auto; overflow-y: hidden">
+      <div class="content">
+        This container has overflow-x set to <strong>auto</strong> and
+        overflow-y set to <strong>hidden</strong>. A horizontal scrollbar
+        appears, but the vertical overflow is hidden.
+      </div>
+    </div>
+  </body>
+</html>

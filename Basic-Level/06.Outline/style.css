@@ -1,0 +1,71 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0.622),
+    rgba(0, 0, 255, 0.576),
+    rgba(0, 128, 0, 0.761)
+  );
+}
+/* Basic Outline */
+.basic-outline {
+  outline: 2px solid blue;
+  margin: 15px;
+  padding: 10px;
+  background-color: lightyellow;
+}
+
+/* Outline with Offset */
+.outline-offset {
+  outline: 3px solid green;
+  outline-offset: 5px; /* Distance between border and outline */
+  margin: 15px;
+  padding: 10px;
+  background-color: lightcoral;
+}
+
+/* Dotted Outline */
+.dotted-outline {
+  outline: 3px dotted red;
+  margin: 15px;
+  padding: 10px;
+  background-color: lightblue;
+}
+
+/* Outline on Focus for Accessibility */
+.focus-outline {
+  outline: none; /* No outline initially */
+}
+
+.focus-outline:focus {
+  outline: 2px solid orange; /* Outline appears on focus */
+}
+
+/* Outline with Custom Color and Width */
+.custom-outline {
+  outline-width: 4px;
+  outline-color: purple;
+  outline-style: dashed;
+  margin: 15px;
+  padding: 10px;
+  background-color: lightgreen;
+}
+
+/* Outline with Box Shadow for Advanced Effect */
+.shadow-outline {
+  outline: 2px solid teal;
+  outline-offset: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Adds a shadow around the outline */
+  margin: 15px;
+  padding: 10px;
+  background-color: lavender;
+}

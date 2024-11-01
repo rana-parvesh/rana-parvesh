@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Z-Index</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Z-Index Property Examples</h1>
+
+    <!-- Example 1: Default Stacking Order -->
+    <div class="container">
+      <h2>Default Stacking Order</h2>
+      <div class="box-default">Box 1</div>
+      <div class="box-default">Box 2</div>
+      <div class="box-default">Box 3</div>
+      <p>Elements stack based on their order in the HTML without z-index.</p>
+    </div>
+
+    <!-- Example 2: Z-Index with Positioned Elements -->
+    <div class="container">
+      <h2>Positioned Elements with Z-Index</h2>
+      <div class="box1">Z-Index: 1</div>
+      <div class="box2">Z-Index: 3</div>
+      <div class="box3">Z-Index: 2</div>
+      <p>
+        The boxes stack based on their z-index values. Higher values appear in
+        front.
+      </p>
+    </div>
+
+    <!-- Example 3: Negative Z-Index -->
+    <div class="container">
+      <h2>Negative Z-Index</h2>
+      <div class="negative-box">Z-Index: -1</div>
+      <p>This box has a negative z-index and appears behind other elements.</p>
+    </div>
+
+    <!-- Example 4: Nested Z-Index within Stacking Context -->
+    <div class="container">
+      <h2>Nested Z-Index</h2>
+      <div class="nested-container">
+        <p>This container has z-index: 1. It creates a new stacking context.</p>
+        <div class="nested-box">Z-Index: 5</div>
+      </div>
+      <p>
+        Even though the inner box has a higher z-index, it cannot go outside the
+        parent stacking context.
+      </p>
+    </div>
+  </body>
+</html>

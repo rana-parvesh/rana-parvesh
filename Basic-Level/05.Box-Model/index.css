@@ -1,0 +1,105 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0.622),
+    rgba(0, 0, 255, 0.576),
+    rgba(0, 128, 0, 0.761)
+  );
+}
+/* Basic Box Model */
+.basic-box {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid black;
+  margin: 15px;
+  background-color: lightblue;
+}
+
+/* Padding example */
+.padding-box {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 2px solid darkgreen;
+  margin: 15px;
+  background-color: lightgreen;
+}
+
+/* Margin example */
+.margin-box {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 2px solid purple;
+  margin: 30px;
+  background-color: lightcoral;
+}
+
+/* Border example */
+.border-box {
+  width: 200px;
+  height: 100px;
+  padding: 10px;
+  border: 5px dotted blue;
+  margin: 15px;
+  background-color: lightyellow;
+}
+
+/* Box Sizing example */
+.content-box-sizing {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 15px;
+  box-sizing: content-box; /* Default behavior */
+  background-color: lightgray;
+}
+
+.border-box-sizing {
+  width: 200px;
+  height: 100px;
+  padding: 20px;
+  border: 5px solid black;
+  margin: 15px;
+  box-sizing: border-box; /* Includes padding and border in total width and height */
+  background-color: lightpink;
+}
+
+/* Advanced Box Model with Shadows */
+.advanced-box {
+  width: 250px;
+  height: 150px;
+  padding: 15px;
+  border: 3px solid darkorange;
+  margin: 20px;
+  box-sizing: border-box;
+  background-color: lightcyan;
+  box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3); /* Adds shadow around the box */
+}
+
+/* Margin Collapse Example */
+.collapse-container {
+  display: flex;
+  flex-direction: column;
+  background-color: rgb(30, 199, 193);
+}
+
+.collapse-box1,
+.collapse-box2 {
+  width: 200px;
+  height: 50px;
+  margin: 20px 0; /* Margins will collapse */
+  background-color: lightsalmon;
+}

@@ -1,0 +1,167 @@
+* {
+  margin: 0;
+  padding: 20;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 30px;
+  color: rgb(254, 253, 253);
+  border-radius: 20px;
+}
+:root {
+  --primary-color: #ff5733;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  background: aquamarine;
+  padding: 20px;
+  /* height: 90%; */
+  width: 90%;
+  border-radius: 30px;
+  margin-top: 10px;
+}
+.wrap1 {
+  height: 200px;
+  width: 100%;
+  background: red;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  border: 2px solid blue;
+}
+
+.wrap2 {
+  height: 200px;
+  width: 100%;
+  background: rgb(0, 85, 255);
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+h1 {
+  color: rgb(71, 255, 194);
+}
+h2 {
+  background-color: lightblue;
+}
+
+.wrap3 {
+  height: 200px;
+  width: 100%;
+  background: red;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: rgb(149, 64, 64); /* Pure Red */
+  color: rgb(0, 255, 195); /* Pure Green */
+}
+
+.wrap4 {
+  height: 200px;
+  width: 100%;
+  background: red;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 255); /* Semi-transparent blue */
+}
+
+.wrap5 {
+  height: 200px;
+  width: 100%;
+  background: red;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue */
+}
+
+.wrap6 {
+  height: 200px;
+  width: 100%;
+  background: red;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: rgba(0, 0, 255, 0.5); /* Semi-transparent blue */
+}
+
+.wrap7 {
+  height: 200px;
+  width: 100%;
+  background: red;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: hsla(240, 100%, 50%, 0.3); /* Semi-transparent blue */
+}
+
+.wrap8 {
+  height: 200px;
+  width: 100%;
+  background: red;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.wrap9 {
+  height: 200px;
+  width: 100%;
+  background: red;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  /* background: linear-gradient(to right, red, yellow); */
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.35),
+    rgba(255, 255, 0, 0.313),
+    rgba(0, 0, 255, 0.587),
+    rgb(234, 127, 255)
+  );
+}
+
+.wrap10 {
+  height: 200px;
+  width: 100%;
+  background: red;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.wrap11 {
+  height: 200px;
+  width: 100%;
+  background: red;
+  text-align: center;
+  justify-content: center;
+  margin-bottom: 10px;
+  background-color: var(--primary-color);
+}
+
+.wrap12 {
+  color: #0b30eb;
+  height: 200px;
+  width: 100%;
+  /* background: red; */
+  text-align: center;
+  justify-content: center;
+  /* background: repeating-linear-gradient(45deg, red, yellow 10px, green 20px); */
+  /* background: conic-gradient(red, yellow, green); */
+  /* mix-blend-mode: screen; */
+  /* background-color: mix(white, $primary-color, 20%);// 20% lighter */
+  /* color: lch(50% 70 30); */
+  /* color: lab(50% -10 50); */
+  background: url(/images/black\ git.jpg);
+  mask-image: linear-gradient(to bottom, transparent, rgb(179, 27, 27));
+}

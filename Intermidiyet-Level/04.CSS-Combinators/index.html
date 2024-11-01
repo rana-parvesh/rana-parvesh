@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Combinators Tutorial</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>CSS Combinators Tutorial</h1>
+    <p>
+      CSS combinators allow you to select elements based on their relationship
+      with other elements. Here are the main types:
+    </p>
+
+    <h2>1. Descendant Selector (space)</h2>
+    <div class="container">
+      <p>
+        This paragraph is selected by the descendant selector. It changes the
+        color of all paragraphs within the container.
+      </p>
+      <div>
+        <p>Even nested paragraphs are affected by the descendant selector.</p>
+      </div>
+    </div>
+
+    <h2>2. Child Selector (>)</h2>
+    <div class="container">
+      <p>
+        This paragraph is selected by the child selector. Only direct child
+        paragraphs within the container are bolded.
+      </p>
+      <div>
+        <p>This paragraph is nested and not affected by the child selector.</p>
+      </div>
+    </div>
+
+    <h2>3. Adjacent Sibling Selector (+)</h2>
+    <h3 class="title">Title Element</h3>
+    <p>
+      This paragraph immediately follows the title element and is styled by the
+      adjacent sibling selector.
+    </p>
+    <p>
+      This paragraph is not immediately after the title and is not affected by
+      the adjacent sibling selector.
+    </p>
+
+    <h2>4. General Sibling Selector (~)</h2>
+    <h3 class="title">Another Title Element</h3>
+    <p>
+      This paragraph is selected by the general sibling selector. It applies to
+      all paragraphs following the title element in the same parent container.
+    </p>
+    <p>This one is also affected by the general sibling selector.</p>
+  </body>
+</html>

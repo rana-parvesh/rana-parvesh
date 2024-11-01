@@ -1,0 +1,63 @@
+* {
+  font-family: sans-serif;
+}
+
+body {
+  background: antiquewhite;
+}
+/* Pseudo-classes */
+a:link {
+  color: blue;
+}
+a:visited {
+  color: purple;
+}
+a:hover {
+  color: red;
+  text-decoration: underline;
+}
+a:active {
+  color: orange;
+}
+
+/* Input focus pseudo-class */
+input:focus {
+  outline: 2px solid blue;
+  background-color: #61777a66;
+}
+
+/* nth-child pseudo-class */
+ul li:nth-child(odd) {
+  background-color: #f9f9f9;
+}
+ul li:nth-child(even) {
+  background-color: #e0e0e0;
+}
+/* Pseudo-elements */
+p::first-line {
+  font-weight: bold;
+  color: #333;
+}
+p::first-letter {
+  font-size: 2em;
+  color: #007acc;
+}
+/* ::before and ::after pseudo-elements */
+.quote::before {
+  content: "“";
+  font-size: 2em;
+  color: #555;
+  vertical-align: top;
+}
+.quote::after {
+  content: "”";
+  font-size: 2em;
+  color: #555;
+}
+
+/* Hover effect on buttons */
+button:hover {
+  background-color: #007acc;
+  color: white;
+  cursor: pointer;
+}

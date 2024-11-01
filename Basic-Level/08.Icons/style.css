@@ -1,0 +1,25 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-family: monospace;
+}
+body {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.851),
+    rgba(255, 0, 0, 0.359),
+    rgba(0, 255, 255, 0.316),
+    rgba(238, 130, 238, 0.883),
+    rgba(30, 128, 0, 0.643)
+  );
+}
+.icon {
+  font-size: 24px;
+  color: rgb(6, 241, 225);
+  margin-right: 10px;
+}
+
+.icon:hover {
+  color: rgb(15, 150, 234);
+}

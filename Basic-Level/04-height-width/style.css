@@ -1,0 +1,122 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  border-radius: 30px;
+  text-align: center;
+}
+
+body {
+  background: linear-gradient(
+    to left,
+    rgba(255, 0, 0, 0.622),
+    rgba(0, 0, 255, 0.576),
+    rgba(0, 128, 0, 0.761)
+  );
+}
+/* Basic Height and Width */
+.basic-box {
+  height: 200px;
+  width: 300px;
+  background-color: rgb(120, 163, 177);
+  margin: 10px;
+}
+
+/* Viewport Units */
+.viewport-box {
+  width: 50vw; /* 50% of viewport width */
+  height: 40vh; /* 50% of viewport height */
+  background-color: lightcoral;
+  margin: 10px;
+}
+
+/* Min-Height and Min-Width */
+.min-box {
+  min-height: 150px;
+  min-width: 200px;
+  background-color: rgb(144, 238, 233);
+  margin: 10px;
+}
+
+/* Max-Height and Max-Width */
+.max-box {
+  max-height: 300px;
+  max-width: 300px;
+  background-color: lightpink;
+  margin: 10px;
+  overflow: auto; /* Allows scroll if content exceeds max dimensions */
+}
+
+/* Auto Height and Width */
+.auto-box {
+  width: auto;
+  height: auto;
+  padding: 10px;
+  background-color: lightyellow;
+  margin: 10px;
+}
+
+/* Inherit Height and Width */
+.inherit-box {
+  width: inherit;
+  height: inherit;
+  background-color: lightgray;
+  padding: 10px;
+  margin: 10px;
+}
+
+/* Flexbox Sizing */
+.flex-container {
+  display: flex;
+  margin: 10px;
+}
+
+.flex-item {
+  flex-grow: 1;
+  width: 100px;
+  background-color: lightblue;
+  margin: 5px;
+  padding: 10px;
+}
+
+/* Grid Sizing */
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  grid-template-rows: auto 100px;
+  gap: 10px;
+  margin: 10px;
+}
+
+.grid-item {
+  background-color: lightcoral;
+  padding: 10px;
+}
+
+/* Responsive Width */
+.responsive-box {
+  width: 300px;
+  background-color: lavender;
+  margin: 10px;
+}
+
+@media (max-width: 600px) {
+  .responsive-box {
+    width: 100%; /* Full width on smaller screens */
+  }
+}
+
+/* CSS Variable Sizing */
+:root {
+  --box-width: 200px;
+  --box-height: 150px;
+}
+
+.variable-box {
+  width: var(--box-width);
+  height: var(--box-height);
+  background-color: lightcyan;
+  margin: 10px;
+}

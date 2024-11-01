@@ -1,0 +1,146 @@
+* {
+  margin: 0px;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+  margin-bottom: 10px;
+  color: aliceblue;
+  border-radius: 30px;
+  justify-content: center;
+}
+body {
+  background: linear-gradient(
+    to right,
+    rgba(255, 0, 0, 0.218),
+    rgba(255, 255, 0, 0.566),
+    rgb(12, 243, 243)
+  );
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+  justify-content: center;
+  align-items: center;
+}
+.basic-bg-color {
+  background: rgb(56, 86, 112);
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.bg-image {
+  background-image: url(/images/black\ git.jpg);
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.bg-repeat {
+  background-image: url(/images/black\ git.jpg);
+  background-repeat: no-repeat;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.bg-size {
+  background-image: url(/images/black\ git.jpg);
+  background-size: cover;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.bg-position {
+  background: rgb(56, 86, 112);
+  background-image: url(/images/black\ git.jpg);
+  background-position: center center;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.bg-attachment {
+  background: rgb(56, 86, 112);
+  background-image: url(/images/black\ git.jpg);
+  /* background-attachment: fixed; */
+  /* background-attachment: scroll; */
+  background-attachment: local;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.bg-clip {
+  background: rgb(56, 86, 112);
+  background-clip: padding-box;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.bg-origin {
+  background: rgb(56, 86, 112);
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.multiple-bg {
+  /* background: rgb(56, 86, 112); */
+  background: url("/images/black\ git.jpg") no-repeat,
+    url("/images/node.png") no-repeat center/cover;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.linear-gradient {
+  background: rgb(56, 86, 112);
+  background: linear-gradient(to right, red, yellow);
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.radial-gradientolor {
+  background: rgb(56, 86, 112);
+  background: conic-gradient(red, yellow, green);
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.conic-gradient {
+  background: rgb(56, 86, 112);
+  background: conic-gradient(red, yellow, green);
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.blend-mode {
+  background: url(/images/node.png);
+  background-color: rgba(255, 0, 0, 0.5);
+  background-blend-mode: multiply;
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.css-variable {
+  background: rgb(56, 86, 112);
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}
+
+.masked-element {
+  background: rgba(7, 116, 212, 0.603);
+  background: url(/images/node.png);
+  mask-image: linear-gradient(to bottom, transparent, rgb(231, 5, 163));
+  height: 200px;
+  width: 100%;
+  text-align: center;
+}

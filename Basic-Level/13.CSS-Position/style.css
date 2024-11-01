@@ -1,0 +1,70 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: cursive;
+}
+body {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.643),
+    rgba(0, 255, 255, 0.359),
+    rgba(0, 0, 0, 0.443)
+  );
+}
+/* Container for easy layout */
+.container {
+  width: 80%;
+  margin: 20px auto;
+  padding: 10px;
+  background-color: #aa9393;
+  border: 1px solid #ddd;
+}
+/* Example 1: Static Position (Default) */
+.static-box {
+  background-color: lightblue;
+  padding: 20px;
+  margin: 10px 0;
+}
+/* Example 2: Relative Position */
+.relative-box {
+  position: relative;
+  top: 20px;
+  left: 10px;
+  background-color: lightcoral;
+  padding: 20px;
+  margin: 10px 0;
+}
+/* Example 3: Absolute Position */
+.absolute-container {
+  position: relative;
+  height: 200px;
+  background-color: lightgrey;
+  padding: 20px;
+  margin: 10px 0;
+}
+.absolute-box {
+  position: absolute;
+  top: 50px;
+  left: 50px;
+  background-color: lightgreen;
+  padding: 10px;
+}
+/* Example 4: Fixed Position */
+.fixed-box {
+  position: fixed;
+  top: 20px;
+  right: 20px;
+  background-color: lightsalmon;
+  padding: 10px;
+  z-index: 10;
+}
+
+/* Example 5: Sticky Position */
+.sticky-box {
+  position: sticky;
+  top: 0;
+  background-color: lightgoldenrodyellow;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+}

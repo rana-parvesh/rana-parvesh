@@ -1,0 +1,126 @@
+* {
+  margin: 0;
+  padding: 10px;
+  box-sizing: border-box;
+  font-size: 20px;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+body {
+  background: linear-gradient(
+    to right,
+    rgba(3, 245, 245, 0.554),
+    rgba(255, 108, 71, 0.792),
+    rgba(0, 0, 0, 0.728)
+  );
+  .basic-border {
+    border: 2px solid black;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* Individual Border Sides */
+  .individual-borders {
+    border-top: 4px dashed red;
+    border-right: 3px solid blue;
+    border-bottom: 2px dotted green;
+    border-left: 5px double orange;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* Border Radius */
+  .border-radius {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* Circular Element */
+  .circular {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: 2px solid rgb(217, 17, 24);
+    margin: 10px;
+  }
+
+  /* Border Shorthand */
+  .shorthand-border {
+    border: 3px dotted blue;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* Border Image */
+  .border-image {
+    border: 10px solid transparent;
+    border-image: url("/images/black\ git.jpg") 30 round;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* Outline vs Border */
+  .outline-vs-border {
+    border: 2px solid red;
+    outline: 4px dashed blue;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* Advanced Border Styles */
+  .advanced-border-style {
+    border: 4px groove lightblue;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* Border with Box Shadow */
+  .border-shadow {
+    border: 3px solid blue;
+    box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.858);
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* Border Gradient */
+  .border-gradient {
+    border: 5px solid transparent;
+    background: linear-gradient(to right, red, rgb(9, 255, 0));
+    background-clip: padding-box;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  /* Border Animation */
+  .border-animation {
+    border: 5px solid red;
+    animation: border-pulse 1s infinite alternate;
+    padding: 10px;
+    margin: 10px;
+  }
+
+  @keyframes border-pulse {
+    0% {
+      border-color: red;
+    }
+    100% {
+      border-color: yellow;
+    }
+  }
+
+  /* Table Border Collapse */
+  table {
+    border-collapse: collapse;
+    width: 100%;
+    margin: 10px 0;
+  }
+
+  td,
+  th {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: left;
+  }
+}
