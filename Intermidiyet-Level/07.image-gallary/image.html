@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Image Gallery with Filtering</title>
+    <link rel="stylesheet" href="image.css" />
+  </head>
+  <body>
+    <h1>Image gallary with lightbox</h1>
+    <div class="gallery">
+      <img src="/images/black git.jpg" alt="image" />
+      <img src="/images/github.png" alt="image" />
+      <img src="/images/node.png" alt="image" />
+      <img src="/images/rana.jpg" alt="image" />
+      <img src="/images/dark.jpg.jpg" alt="image" />
+      <img src="/images/new wp.jpg" alt="image" />
+    </div>
+
+    <div class="lightbox" id="lightbox" onclick="closeLightbox()">
+      <img id="lightbox-img" alt="Lightbox Image" />
+    </div>
+    <script>
+      function openLightbox(src) {
+        document.getElementById("lightbox").classList.add("active");
+        document.getElementById("lightbox-img").src = src;
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").classList.remove("active");
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,88 @@
+/* Basic styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+/* Absolute unit: px */
+.box-px {
+  width: 100px;
+  height: 100px;
+  background-color: #8ea604;
+  color: #fff;
+  display: inline-block;
+  text-align: center;
+  line-height: 150px;
+  margin: 10px;
+}
+
+/* Relative unit: % */
+.box-percent {
+  width: 50%;
+  height: 100px;
+  background-color: #f5a623;
+  color: #fff;
+  text-align: center;
+  line-height: 100px;
+  margin: 10px auto;
+}
+
+/* Relative unit: em */
+.box-em {
+  width: 10em;
+  height: 5em;
+  background-color: #f25f5c;
+  color: #fff;
+  text-align: center;
+  line-height: 5em;
+  margin: 10px auto;
+}
+
+/* Relative unit: rem */
+.box-rem {
+  width: 20rem;
+  height: 10rem;
+  background-color: #247ba0;
+  color: #fff;
+  text-align: center;
+  line-height: 10rem;
+  margin: 10px auto;
+}
+
+/* Viewport units: vw and vh */
+.box-vw-vh {
+  width: 50vw;
+  height: 20vh;
+  background-color: #70c1b3;
+  color: #fff;
+  text-align: center;
+  line-height: 20vh;
+  margin: 10px auto;
+}
+
+/* Character unit: ch */
+.box-ch {
+  width: 40ch;
+  background-color: #b2b2b2;
+  color: #000;
+  padding: 1em;
+  margin: 10px auto;
+  text-align: center;
+}
+
+/* CSS Grid with fr units */
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr 1fr;
+  gap: 10px;
+  margin: 20px;
+}
+
+.grid-item {
+  background-color: #f6cd61;
+  color: #333;
+  padding: 20px;
+  text-align: center;
+  font-size: 1.2rem;
+}

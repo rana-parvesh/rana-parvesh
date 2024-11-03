@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CSS Forms</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h2>Contact Form with Additional Elements</h2>
+    <form action="/submit" method="post">
+      <label for="name">Name:</label>
+      <input
+        type="text"
+        id="name"
+        name="name"
+        placeholder="Your full name"
+        required
+      />
+
+      <label for="email">Email:</label>
+      <input
+        type="email"
+        id="email"
+        name="email"
+        placeholder="example@example.com"
+        required
+      />
+
+      <label for="gender">Gender:</label>
+      <div class="gender">
+        <label><input type="radio" name="gender" value="male" /> Male</label>
+        <label
+          ><input type="radio" name="gender" value="female" /> Female</label
+        >
+        <label><input type="radio" name="gender" value="other" /> Other</label>
+      </div>
+
+      <label for="country">Country:</label>
+      <select id="country" name="country">
+        <option value="us">United States</option>
+        <option value="ca">Canada</option>
+        <option value="uk">United Kingdom</option>
+        <option value="other">Other</option>
+      </select>
+
+      <label for="message">Message:</label>
+      <textarea
+        id="message"
+        name="message"
+        placeholder="Your message here..."
+        required
+      ></textarea>
+
+      <div class="newsletter">
+        <label
+          ><input type="checkbox" name="newsletter" /> Subscribe to our
+          newsletter</label
+        >
+      </div>
+
+      <button type="submit">Submit</button>
+    </form>
+  </body>
+</html>

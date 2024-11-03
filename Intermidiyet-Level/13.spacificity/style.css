@@ -1,0 +1,24 @@
+/* Element selector */
+p {
+  color: black; /* Specificity: (0, 0, 0, 1) */
+}
+
+/* Class selector */
+.highlight {
+  color: blue; /* Specificity: (0, 0, 1, 0) */
+}
+
+/* ID selector */
+#unique {
+  color: green; /* Specificity: (0, 1, 0, 0) */
+}
+
+/* Combination selector */
+#unique .highlight {
+  color: purple; /* Specificity: (0, 1, 1, 0) */
+}
+
+/* !important override */
+.highlight {
+  color: red !important;
+}

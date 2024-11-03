@@ -1,0 +1,43 @@
+.calc-box {
+  width: calc(100% - 40px); /* Width is 100% minus 40px */
+  height: calc(200px + 10%); /* Height is 200px plus 10% of viewport */
+  background-color: #0074d9;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Example using min() */
+.min-box {
+  width: min(60%, 5000px); /* Width will not exceed 500px */
+  height: 150px;
+  background-color: #2ecc40;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Example using max() */
+.max-box {
+  width: max(300px, 20%); /* Width will be at least 300px */
+  height: 150px;
+  background-color: #ff4136;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+}
+
+/* Example using clamp() */
+.clamp-box {
+  font-size: clamp(16px, 2vw + 1rem, 32px); /* Font size adapts to viewport */
+  background-color: #ff851b;
+  color: white;
+  padding: 20px;
+  margin: 20px auto;
+  text-align: center;
+  width: 80%;
+  max-width: 600px;
+}

@@ -1,0 +1,25 @@
+/* Initialize main and sub-section counters */
+body {
+  counter-reset: main-counter;
+}
+/* Style for main sections */
+h2::before {
+  counter-increment: main-counter;
+  content: "section" counter(main-counter) "--";
+  font-weight: bold;
+  color: #4caf50;
+}
+
+/* Initialize sub-counter inside each main section */
+h2 + ul {
+  counter-reset: sub-counter;
+  margin-left: 20px;
+}
+
+/* Style for sub-sections */
+li::before {
+  counter-increment: sub-counter;
+  content: counter(main-counter) "." counter(sub-counter) " ";
+  font-weight: bold;
+  color: #ff5722;
+}
