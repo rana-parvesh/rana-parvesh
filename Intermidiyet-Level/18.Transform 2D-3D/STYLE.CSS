@@ -1,0 +1,75 @@
+/* Basic container style */
+.container,
+.container-3d,
+.perspective-container {
+  padding: 20px;
+  display: flex;
+  gap: 40px;
+  flex-wrap: wrap;
+  margin-bottom: 20px;
+  background: rgba(202, 21, 15, 0.154);
+  font-family: sans-serif;
+}
+
+/* Basic box styling */
+.box {
+  width: 100px;
+  height: 100px;
+  background: linear-gradient(
+    to right,
+    rgba(76, 205, 20, 0.623),
+    rgba(0, 255, 255, 0.397),
+    rgba(2, 21, 225, 0.273)
+  );
+  color: rgba(237, 49, 7, 0.813);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 1);
+  text-shadow: 0 0 20px rgba(0, 0, 0, 1);
+}
+
+/* 2D Transforms */
+.translate {
+  transform: translate(20px, 20px);
+}
+
+.rotate {
+  transform: rotate(45deg);
+}
+
+.scale {
+  transform: scale(1.5);
+}
+
+.skew {
+  transform: skew(20deg, 10deg);
+}
+
+/* 3D Transforms */
+.container-3d {
+  perspective: 600px;
+}
+
+.rotateX {
+  transform: rotateX(45deg);
+}
+
+.rotateY {
+  transform: rotateY(45deg);
+}
+
+.rotateZ {
+  transform: rotateZ(45deg);
+}
+
+/* Advanced 3D with Perspective */
+.perspective-container {
+  perspective: 800px;
+}
+
+.box-advanced-3d {
+  background-color: lightseagreen;
+  transform: rotateX(45deg) rotateY(45deg) scale(1.2);
+}

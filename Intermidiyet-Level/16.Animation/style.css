@@ -1,0 +1,96 @@
+/* Container for centering elements */
+.container {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+}
+/* Basic 2D Transformation */
+.basic-2d {
+  width: 100px;
+  height: 100px;
+  background-color: coral;
+  margin: 20px;
+  transition: transform 0.3s ease;
+}
+
+.basic-2d:hover {
+  transform: translate(20px, 20px) rotate(15deg) scale(1.2);
+}
+
+/* Intermediate 3D Transformation with Hover */
+.intermediate-3d {
+  width: 100px;
+  height: 100px;
+  background-color: lightblue;
+  margin: 20px;
+  perspective: 600px;
+  transition: transform 0.5s ease;
+}
+
+.intermediate-3d:hover {
+  transform: rotateX(30deg) rotateY(30deg) scale(1.1);
+}
+
+/* Advanced 2D Keyframe Animation */
+@keyframes bounce {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-20px);
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+.advanced-2d {
+  width: 100px;
+  height: 100px;
+  background-color: lightgreen;
+  margin: 20px;
+  animation: bounce 1s infinite;
+}
+
+/* Professional 3D Animation with Keyframes */
+@keyframes complex-3d-rotate {
+  0% {
+    transform: rotateX(0deg) rotateY(0deg) rotateZ(0deg);
+  }
+  25% {
+    transform: rotateX(90deg) rotateY(0deg) rotateZ(0deg);
+  }
+  50% {
+    transform: rotateX(90deg) rotateY(90deg) rotateZ(0deg);
+  }
+  75% {
+    transform: rotateX(90deg) rotateY(90deg) rotateZ(90deg);
+  }
+  100% {
+    transform: rotateX(360deg) rotateY(360deg) rotateZ(360deg);
+  }
+}
+
+.pro-3d {
+  width: 100px;
+  height: 100px;
+  background-color: purple;
+  color: white;
+  margin: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  perspective: 1000px;
+  animation: complex-3d-rotate 3s infinite linear;
+}
+
+/* Container for organizing the boxes */
+.container {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-items: center;
+  height: 100vh;
+  flex-wrap: wrap;
+}
