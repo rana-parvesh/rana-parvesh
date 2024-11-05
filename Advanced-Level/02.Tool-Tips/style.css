@@ -1,0 +1,63 @@
+/* Basic Tooltip */
+.tooltip-basic {
+  cursor: pointer;
+  color: blue;
+}
+
+/* Custom Tooltip */
+.tooltip {
+  position: relative;
+  display: inline-block;
+  cursor: pointer;
+  color: blue;
+}
+.tooltip::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: black;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 5px;
+  white-space: nowrap;
+  font-size: 12px;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+.tooltip:hover::after {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Intermediate Tooltip with Arrow */
+.tooltip-intermediate::before {
+  content: "";
+  position: absolute;
+  bottom: 100%;
+  left: 50%;
+  transform: translateX(-50%);
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent #333 transparent;
+  opacity: 0;
+  visibility: hidden;
+  transition: opacity 0.3s;
+}
+.tooltip-intermediate:hover::before {
+  opacity: 1;
+  visibility: visible;
+}
+
+/* Advanced Tooltip with Animation */
+.tooltip-advanced::after {
+  bottom: 120%;
+  padding: 10px 15px;
+  transition: opacity 0.4s ease, transform 0.4s ease;
+  transform: translateX(-50%) translateY(10px);
+}
+.tooltip-advanced:hover::after {
+  transform: translateX(-50%) translateY(0);
+}
