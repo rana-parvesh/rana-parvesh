@@ -1,0 +1,34 @@
+/* Basic Font Family */
+body {
+  font-family: Arial, sans-serif;
+  margin: 20px;
+}
+h1 {
+  font-family: "Times New Roman", serif;
+}
+/* Using Google Font */
+h2 {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+/* Custom Font using @font-face */
+@font-face {
+  font-family: "CustomFont";
+  src: url("fonts/CustomFont.woff2") format("woff2"),
+    url("fonts/CustomFont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+.custom-font {
+  font-family: "CustomFont", Arial, sans-serif;
+}
+/* Responsive Font Size */
+p {
+  font-size: 18px;
+}
+
+@media (max-width: 768px) {
+  p {
+    font-size: 16px;
+  }
+}

@@ -1,0 +1,78 @@
+/* Basic styling */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  font-family: Arial, sans-serif;
+  background-color: #f0f0f0;
+  transition: background-color 0.5s;
+}
+
+.clock-container {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+/* Analog clock face styling */
+.analog-clock {
+  width: 200px;
+  height: 200px;
+  border: 8px solid #333;
+  border-radius: 50%;
+  position: relative;
+  background: white;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+  margin-bottom: 20px;
+}
+
+.hand {
+  position: absolute;
+  bottom: 50%;
+  left: 50%;
+  transform-origin: bottom;
+  transform: rotate(90deg);
+}
+
+.hour-hand {
+  width: 6px;
+  height: 60px;
+  background-color: #333;
+  z-index: 3;
+}
+
+.minute-hand {
+  width: 4px;
+  height: 80px;
+  background-color: #333;
+  z-index: 2;
+}
+
+.second-hand {
+  width: 2px;
+  height: 90px;
+  background-color: red;
+  z-index: 1;
+}
+
+/* Digital clock styling */
+.digital-clock {
+  font-size: 1.5rem;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+/* Time indicators */
+.time-period {
+  font-size: 1rem;
+  color: #666;
+  margin-top: 5px;
+}

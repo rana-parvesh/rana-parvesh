@@ -1,0 +1,65 @@
+body {
+  background: linear-gradient(
+    to right,
+    rgba(0, 0, 0, 0.426),
+    rgb(0, 255, 255),
+    rgba(0, 0, 0, 0.528)
+  );
+}
+
+.basic-shadow {
+  width: 200px;
+  height: 100px;
+  background-color: #0074d9;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.3);
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin: 20px;
+}
+
+.inset-shadow {
+  width: 200px;
+  height: 100px;
+  background-color: #ff4136;
+  box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.5);
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin: 20px;
+}
+.spread-shadow {
+  width: 200px;
+  height: 100px;
+  background-color: #2ecc40;
+  box-shadow: 5px 5px 10px 5px rgba(0, 0, 0, 0.4);
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin: 20px;
+}
+.multiple-shadow {
+  width: 200px;
+  height: 100px;
+  background-color: #ff851b;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.5),
+    -5px -5px 10px rgba(255, 255, 255, 0.7);
+  color: white;
+  text-align: center;
+  line-height: 100px;
+  margin: 20px;
+}
+.text-shadow {
+  font-size: 24px;
+  color: #333;
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.5);
+  text-align: center;
+  margin: 20px;
+}
+.glow-text {
+  font-size: 24px;
+  color: #0074d9;
+  text-shadow: 0 0 10px #36ff86, 0 0 20px #040404;
+  text-align: center;
+  margin: 20px;
+}
