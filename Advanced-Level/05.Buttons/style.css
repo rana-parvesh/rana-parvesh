@@ -1,0 +1,81 @@
+* {
+  font-family: poppins, sans-serif;
+  text-align: center;
+}
+body {
+  /* display: flex; */
+  /* flex-direction: column; */
+  /* height: 100vh; */
+  background: linear-gradient(
+    to right,
+    rgb(193, 146, 146),
+    rgb(65, 113, 65),
+    rgb(89, 89, 128)
+  );
+}
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  width: 100%;
+  background: #93e7ed;
+  border-radius: 40px;
+}
+button {
+  background-color: red;
+  display: block;
+  margin: 10px;
+  padding: 5px;
+  width: 50%;
+  height: 50px;
+  opacity: 0.7;
+  color: aliceblue;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.705);
+  text-shadow: 0, 0, 0 rgba(0, 0, 0, 0.705);
+  border-radius: 30px;
+}
+.btn2 {
+  background-color: green;
+}
+.btn3 {
+  background-color: blue;
+}
+.btn4 {
+  background-color: aqua;
+  color: black;
+}
+.btn5 {
+  background-color: purple;
+}
+.btn1:hover {
+  background-color: bisque;
+  font-size: 1rem;
+  color: black;
+  transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
+}
+.btn2:hover {
+  background-color: bisque;
+  font-size: 1rem;
+  color: black;
+  transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
+}
+.btn3:hover {
+  background-color: bisque;
+  font-size: 1rem;
+  color: black;
+  transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
+}
+.btn4:hover {
+  background-color: bisque;
+  font-size: 1rem;
+  color: black;
+  transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
+}
+.btn5:hover {
+  background-color: bisque;
+  font-size: 1rem;
+  color: black;
+  transition: transform 0.5s ease, opacity 0.5s ease, box-shadow 0.5s ease;
+}
