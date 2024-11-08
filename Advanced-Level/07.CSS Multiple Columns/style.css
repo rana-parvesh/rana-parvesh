@@ -1,0 +1,61 @@
+/* Basic Styling */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 20px;
+  background: #f4f4f4;
+}
+
+h1 {
+  text-align: center;
+  color: #333;
+}
+
+/* Multiple Columns Basic */
+.multi-column-basic {
+  column-count: 3; /* Number of columns */
+  column-gap: 20px; /* Space between columns */
+  margin: 20px 0;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Advanced Styling */
+.multi-column-advanced {
+  column-width: 150px; /* Ideal column width */
+  column-gap: 30px; /* Wider gap */
+  column-rule: 2px solid #007bff; /* Rule between columns */
+  margin: 20px 0;
+  padding: 10px;
+  background: #ffffff;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+}
+
+/* Column Spanning */
+.multi-column-advanced h2 {
+  column-span: all; /* Span across all columns */
+  text-align: center;
+  background: #007bff;
+  color: #fff;
+  padding: 10px;
+  margin: 0;
+  border-radius: 8px 8px 0 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .multi-column-basic,
+  .multi-column-advanced {
+    column-count: 2; /* Fewer columns on smaller screens */
+  }
+}
+
+@media (max-width: 480px) {
+  .multi-column-basic,
+  .multi-column-advanced {
+    column-count: 1; /* Single column for mobile */
+  }
+}

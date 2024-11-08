@@ -1,0 +1,75 @@
+/* Define Custom Properties */
+@property --bg-color {
+  syntax: "<color>";
+  initial-value: lightblue;
+  inherits: false;
+}
+
+@property --box-size {
+  syntax: "<length>";
+  initial-value: 100px;
+  inherits: false;
+}
+
+@property --box-color {
+  syntax: "<color>";
+  initial-value: coral;
+  inherits: false;
+}
+
+/* Apply the background color */
+body {
+  background-color: var(--bg-color);
+  transition: background-color 0.9s ease;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  margin: 0;
+}
+
+/* Box with dynamic size and color */
+.box {
+  width: var(--box-size);
+  height: var(--box-size);
+  background-color: var(--box-color);
+  transition: width 0.5s ease, height 0.5s ease, background-color 0.5s ease;
+  border-radius: 8px;
+}
+
+/* Change background color on hover */
+body:hover {
+  --bg-color: rgb(2, 192, 240);
+}
+
+/* Box size changes on hover */
+.box:hover {
+  --box-size: 200px;
+  --box-color: #3498db;
+}
+
+/* Adding text */
+h1 {
+  position: absolute;
+  top: 20px;
+  font-size: 2rem;
+  color: #333;
+}
+
+/* Button to change variables dynamically */
+button {
+  position: absolute;
+  bottom: 20px;
+  padding: 10px 20px;
+  background-color: #e74c3c;
+  color: white;
+  border: none;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #8078c0b9;
+}

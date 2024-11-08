@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Box-Sizing: Basic to Advanced</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Understanding box-sizing: content-box vs border-box</h1>
+
+    <!-- Basic: content-box -->
+    <div class="content-box">
+      <strong>content-box (default):</strong> Width = 200px, Padding = 20px,
+      Border = 5px
+      <p>
+        This box has a width of 200px, but the padding and border are added
+        outside the width, making the total width 250px.
+      </p>
+    </div>
+
+    <!-- Intermediate: border-box -->
+    <div class="border-box">
+      <strong>border-box:</strong> Width = 200px, Padding = 20px, Border = 5px
+      <p>
+        This box has a width of 200px, with padding and border included inside
+        the width. The total width remains 200px.
+      </p>
+    </div>
+
+    <!-- Advanced: Global box-sizing -->
+    <div class="advanced-box">
+      <strong>Global box-sizing (border-box):</strong> Width = 300px, Padding =
+      40px, Border = 10px
+      <p>
+        All elements in the page now calculate width using border-box, including
+        this one. The width is fixed at 300px, and padding and border are inside
+        this width.
+      </p>
+    </div>
+
+    <!-- Advanced: Flexbox with box-sizing -->
+    <div class="flex-container">
+      <div class="flex-item">Item 1</div>
+      <div class="flex-item">Item 2</div>
+      <div class="flex-item">Item 3</div>
+    </div>
+
+    <h2>Responsive Grid Layout with box-sizing: border-box</h2>
+
+    <!-- Responsive Grid Layout -->
+    <div class="grid-container">
+      <div class="grid-item">Item 1</div>
+      <div class="grid-item">Item 2</div>
+      <div class="grid-item">Item 3</div>
+      <div class="grid-item">Item 4</div>
+    </div>
+  </body>
+</html>

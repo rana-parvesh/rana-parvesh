@@ -1,0 +1,99 @@
+/* Global styles */
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f4f4f4;
+}
+
+header {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 20px;
+}
+
+.container {
+  width: 80%;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: white;
+}
+
+.main-content {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.main-content .box {
+  background-color: lightblue;
+  padding: 20px;
+  flex: 1;
+  min-width: 200px;
+  text-align: center;
+}
+
+footer {
+  background-color: #333;
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+/* Basic Media Query: For small screens */
+@media only screen and (max-width: 600px) {
+  header {
+    font-size: 16px;
+  }
+
+  .container {
+    width: 100%;
+    padding: 10px;
+  }
+
+  .main-content {
+    flex-direction: column;
+  }
+
+  .main-content .box {
+    width: 100%;
+    margin-bottom: 10px;
+  }
+}
+
+/* Intermediate Media Query: For larger screens (tablets and small laptops) */
+@media only screen and (min-width: 601px) and (max-width: 1024px) {
+  header {
+    font-size: 18px;
+  }
+
+  .container {
+    width: 90%;
+  }
+
+  .main-content {
+    flex-direction: row;
+  }
+
+  .main-content .box {
+    flex: 1;
+    min-width: 220px;
+  }
+}
+
+/* Advanced Media Query: For large screens (desktops) */
+@media only screen and (min-width: 1025px) {
+  header {
+    font-size: 20px;
+  }
+
+  .container {
+    width: 70%;
+  }
+
+  .main-content .box {
+    flex: 1;
+    min-width: 250px;
+  }
+}

@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Responsive Pagination with Z-Index</title>
+    <style>
+      /* General Reset */
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: "Arial", sans-serif;
+        background: linear-gradient(90deg, #a955b0, #02e1fe);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 100vh;
+        overflow: hidden;
+      }
+
+      /* Pagination Container */
+      .pagination {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        list-style: none;
+        background: #ffffff;
+        padding: 15px 25px;
+        border-radius: 12px;
+        box-shadow: 0 6px 15px rgba(0, 0, 0, 0.1);
+        z-index: 10;
+        position: relative;
+      }
+
+      .pagination li {
+        margin: 0 8px;
+      }
+
+      /* Links */
+      .pagination a {
+        text-decoration: none;
+        font-weight: bold;
+        color: #0288d1;
+        padding: 12px 18px;
+        border-radius: 6px;
+        transition: all 0.3s ease;
+        position: relative;
+        z-index: 10;
+      }
+
+      /* Hover Effects */
+      .pagination a:hover {
+        background: #0288d1;
+        color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+      }
+
+      /* Active Page */
+      .pagination .active a {
+        background: #0288d1;
+        color: #fff;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
+        pointer-events: none;
+      }
+
+      /* Disabled Buttons */
+      .pagination .disabled a {
+        color: #aaa;
+        pointer-events: none;
+      }
+
+      /* Ellipsis */
+      .pagination .ellipsis {
+        font-size: 18px;
+        color: #aaa;
+        pointer-events: none;
+      }
+
+      /* Responsive Design */
+      @media (max-width: 768px) {
+        .pagination {
+          flex-wrap: wrap;
+          padding: 10px;
+        }
+
+        .pagination li {
+          margin: 5px;
+        }
+      }
+
+      @media (max-width: 480px) {
+        .pagination a {
+          padding: 8px 12px;
+          font-size: 14px;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <ul class="pagination" id="pagination"></ul>
+
+    <script>
+      const totalPages = 20; // Total number of pages
+      let currentPage = 1; // Current page
+
+      /**
+       * Render Pagination Links
+       * @param {number} total Total number of pages
+       * @param {number} current Current page
+       */
+      function renderPagination(total, current) {
+        const pagination = document.getElementById("pagination");
+        pagination.innerHTML = ""; // Clear existing links
+
+        // Previous Button
+        pagination.innerHTML += `
+                <li class="${current === 1 ? "disabled" : ""}">
+                    <a href="#" onclick="goToPage(${current - 1})">Previous</a>
+                </li>
+            `;
+
+        // Page Links
+        const range = 2; // Number of links to show before/after current
+        for (let i = 1; i <= total; i++) {
+          if (
+            i === 1 ||
+            i === total ||
+            (i >= current - range && i <= current + range)
+          ) {
+            pagination.innerHTML += `
+                        <li class="${i === current ? "active" : ""}">
+                            <a href="#" onclick="goToPage(${i})">${i}</a>
+                        </li>
+                    `;
+          } else if (i === current - range - 1 || i === current + range + 1) {
+            pagination.innerHTML += `<li class="ellipsis">...</li>`;
+          }
+        }
+
+        // Next Button
+        pagination.innerHTML += `
+                <li class="${current === total ? "disabled" : ""}">
+                    <a href="#" onclick="goToPage(${current + 1})">Next</a>
+                </li>
+            `;
+      }
+
+      /**
+       * Navigate to a Specific Page
+       * @param {number} page Page number to navigate to
+       */
+      function goToPage(page) {
+        if (page < 1 || page > totalPages) return;
+        currentPage = page;
+        renderPagination(totalPages, currentPage);
+      }
+
+      // Initial Render
+      renderPagination(totalPages, currentPage);
+    </script>
+  </body>
+</html>
