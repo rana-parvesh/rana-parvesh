@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Advanced Event Website</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="hero">
+      <nav class="navbar">
+        <a href="#home" class="logo">EventPro</a>
+        <ul class="nav-links">
+          <li><a href="#about">About</a></li>
+          <li><a href="#schedule">Schedule</a></li>
+          <li><a href="#register">Register</a></li>
+        </ul>
+      </nav>
+      <div class="hero-content">
+        <h1>Experience the Future</h1>
+        <p>
+          Join us on <strong>25th December 2024</strong> for an inspiring event.
+        </p>
+        <a href="#register" class="cta">Register Now</a>
+      </div>
+    </header>
+
+    <section id="about" class="section about">
+      <h2>About the Event</h2>
+      <p>
+        This is more than an event; it's a journey into innovation and
+        creativity. Meet industry leaders, explore cutting-edge technology, and
+        connect with like-minded individuals.
+      </p>
+      <div class="about-grid">
+        <div class="card">
+          <h3>Networking</h3>
+          <p>Build connections with professionals and peers.</p>
+        </div>
+        <div class="card">
+          <h3>Keynotes</h3>
+          <p>Listen to industry leaders share their insights.</p>
+        </div>
+        <div class="card">
+          <h3>Workshops</h3>
+          <p>Hands-on experience with the latest tools and techniques.</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="schedule" class="section schedule">
+      <h2>Event Schedule</h2>
+      <div class="schedule-grid">
+        <div class="schedule-item">
+          <h3>Opening Ceremony</h3>
+          <p>9:00 AM - 10:00 AM</p>
+        </div>
+        <div class="schedule-item">
+          <h3>Keynote Speech</h3>
+          <p>10:30 AM - 12:00 PM</p>
+        </div>
+        <div class="schedule-item">
+          <h3>Workshops</h3>
+          <p>1:00 PM - 4:00 PM</p>
+        </div>
+        <div class="schedule-item">
+          <h3>Closing Ceremony</h3>
+          <p>5:00 PM - 6:00 PM</p>
+        </div>
+      </div>
+    </section>
+
+    <section id="register" class="section register">
+      <h2>Register Now</h2>
+      <form id="registration-form" class="form">
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            placeholder="Enter your name"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            placeholder="Enter your email"
+            required
+          />
+        </div>
+        <button type="submit" class="btn">Submit</button>
+        <p id="form-feedback"></p>
+      </form>
+    </section>
+
+    <footer></footer>
+    <script src="script.js"></script>
+  </body>
+</html>
