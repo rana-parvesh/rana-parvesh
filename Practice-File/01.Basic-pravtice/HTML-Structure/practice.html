@@ -3,27 +3,43 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Practice of Basic levels</title>
+    <title>Practice Form</title>
     <link rel="stylesheet" href="practice.css" />
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Jaro:opsz@6..72&family=Rubik+Wet+Paint&display=swap"
-      rel="stylesheet"
-    />
   </head>
   <body>
     <header>
-      <h1>this is a header section</h1>
+      <h1>This is a header Section</h1>
     </header>
     <main>
-      <section>
-        <h2>about me</h2>
-        <p>my name is rana. i am a student of BBA</p>
+      <section class="about">
+        <h2>About Me</h2>
+        <p>My name is Rana. I am a student of BBA.</p>
+      </section>
+      <section class="form-section">
+        <form action="">
+          <h1>Log In</h1>
+          <hr />
+            <label for="name">Name:</label>
+            <input type="text" id="name" placeholder="Enter your name" />
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="email" id="email" placeholder="Enter your email" />
+          </div>
+          <div class="form-group">
+            <label for="password">Password:</label>
+            <input
+              type="password"
+              id="password"
+              placeholder="Enter your password"
+            />
+          </div>
+          <button type="submit">Submit</button>
+        </form>
       </section>
     </main>
     <footer>
-      <p>&copy; 2024 this is my website</p>
+      <p>&copy; 2024 This is my website</p>
     </footer>
   </body>
 </html>
